@@ -5,7 +5,7 @@
 # polemix.py arg [arg...]
 
 # where arg is
-#     '[list], label'  or   '[list]' (label defaults to 'list')
+#     '[list] label'  or   '[list]' (label defaults to 'list')
 # list being coefficients of input, -lp1, lp2, -lp3, lp4...
 #
 # or
@@ -59,7 +59,8 @@ def main():
             pt[-1] = a
             pt.append ('b')
             continue
-        res = re.search ('^\[(.*?)\], *(.*)$', a)
+
+        res = re.search ('^\[(.*?)\] *(\S.*)$', a)
         if res != None and len(res.groups()) == 2:
             g1 = res.group(1)
             g2 = res.group(2)
@@ -72,7 +73,7 @@ def main():
                 g2 = str(g1)
             else:
                 continue
-        
+
         lis[-1].append ([float (i) for i in re.split (", *", g1)])
         lab[-1].append (g2)
         pm[-1].append (polemix (f, 1000, lis[-1][-1]))
