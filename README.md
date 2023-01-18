@@ -24,7 +24,7 @@ This is a multimode VCF based on a [design](https://electricdruid.net/multimode-
 
 ### Discussion
 
-As discussed below, it is important that filter stages have unity DC gain and mixer ratios be correct at a level of about 1% or better, preferably more like 0.1%.
+As discussed [here](Docs/tolerances.md), it is important that filter stages have unity DC gain and mixer ratios be correct at a level of about 1% or better, preferably more like 0.1%.
 
 The 82k feedback resistors used in the ED design are a puzzle: Per the CEM3320 datasheet, they result in a gain of around 0.82. In the datasheet circuit these resistors are 100k giving gain 0.999. On the breadboard I found some gain variation, so I replaced the 91k resistors (RI, RC) with 82k + 20k trimmers.
 
@@ -64,27 +64,13 @@ Here are Bode plots for these filters:
 
 ### Cancellation and tolerances
 
-How do you get a high pass filter, or any filter that goes to zero at zero frequency, with a combination of low pass filters? Answer: By cancellation. Two of the poles are inverted and their contribution cancels that of the other poles and input. For example, a 1 pole HP is input minus 1 pole LP. At low frequency these are supposed to be equal magnitude and phase and their difference is zero.
-
-But that means sensitivity to errors. Quoting the Electric Druid page, "These are proper mixed responses that need careful matching of the outputs. If the outputs are not well matched, the cancellation of the signal in the stop band will not be good, and you’ll have a highpass filter with some “leakage” of low frequencies. For musical use, this may well not be that important."
-
-Below are Bode plots for a perfect 4-pole high pass filter, with coefficients [A, B, C, D, E] = [1, 4, 6, 4, 1], and filters with the third coefficient changed by 1% or 0.1%:
-
-![HP4](Images/Figure_0.png)
-
-Looking at the formulas, we see there's a term in the real part of the numerator equal to A-B+C-D+E. With [1, 4, 6, 4, 1] this equals 0. But suppose there is a 1% error in the third coefficient? With [1, 4, 6.06, 4, 1] this becomes 0.06, which then is the dominant term in the numerator at low frequency. So instead of the amplitude going to zero at DC, it levels off at 6% of the input amplitude. Even with a 0.1% error the amplitude below about 200 Hz is significantly higher than with perfect coefficients, though probably not large enough to be objectionable in most situations.
-
-For the lower order HP filters the same thing happens but the sensitivity to exact coefficients is lower — with 1% error the effect is pretty much negligible down to 10 Hz for 1-pole HP.
-
-The lesson is, if you want accurate high order high pass filtering, you need to calibrate carefully for unity DC gain in each filter stage, and you need matched resistors in the mixers; 1% tolerance is probably not good enough.
+See discussion [here](Docs/tolerances.md).
 
 ## Software
 
-The plots above were produced with a Python script included in this repo's Software folder. Libraries matplotlib, numpy, sys, and re are required. For the formulas for pole mixing upon which these plots are based, see [https://expeditionelectronics.com/Diy/Polemixing/math](https://expeditionelectronics.com/Diy/Polemixing/math). I believe there are some errors: the formulas for the imaginary parts of the numerator and denominator should have the opposite sign.
+The plots above were produced with a Python script included in this repo's Software folder. For a usage example see plots.sh in that folder. Libraries matplotlib, numpy, sys, and re are required. 
 
-
-
-
+For the formulas for pole mixing upon which these plots are based, see [https://expeditionelectronics.com/Diy/Polemixing/math](https://expeditionelectronics.com/Diy/Polemixing/math). I believe there are some errors: the formulas for the imaginary parts of the numerator and denominator should have the opposite sign.
 
 ## Current draw
  mA +12 V,  mA -12 V
