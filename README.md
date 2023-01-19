@@ -13,6 +13,7 @@ This is a multimode VCF based on a [design](https://electricdruid.net/multimode-
 * 1.1k resistor on VEE changed to 1k + 500R trimmer.
 * Added variable bias voltage to VRES pin.
 * Added AC coupling capacitor on input signal to resonance compensation mixer.
+* Added second inverting stage on input to preserve phase
 * Changed ordering of 1st to 6th mixes.
 * In 4P HP mix, changed 4.99k resistor to sum of 2k and 3k which are much easier and cheaper to obtain.
 * Changed BP resistors for unity gain at peak.
