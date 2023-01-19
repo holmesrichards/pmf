@@ -1228,8 +1228,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 95dc0515-68b5-4cb0-9934-a55849618c2c)
   )
-  (text "In original, this\n51k resistor was\nmistakenly omitted."
-    (at 116.84 71.12 0)
+  (text "In original, this\nresistor was\nmistakenly omitted.\nED says 51k but I\nlike resonance CV\nbehavior better with\n120k."
+    (at 118.11 73.66 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a575f3a3-6171-4abe-bd93-f2b4fee838fd)
   )
@@ -1571,10 +1571,10 @@
   (symbol (lib_id "AO_symbols:R") (at 125.73 78.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ef496d7-ab49-4982-9d58-a0c76b781f8d)
-    (property "Reference" "R13" (at 125.73 74.0242 90)
+    (property "Reference" "R13" (at 125.73 73.66 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "51k" (at 125.73 76.5611 90)
+    (property "Value" "120k" (at 125.73 76.2 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "AO_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 125.73 80.518 90)
