@@ -52,13 +52,14 @@ def usage():
     print ('Default is -b')
     
 def main():
-#    fig = plt.figure()
-#    fig, ax_lst = plt.subplots(2, 1)  # a figure with a 1x2 grid of Axes
+#    plt.rcParams["figure.figsize"] = [12, 8]  # plot size in inches
+    plt.rcParams["figure.figsize"] = [7.5, 4.5]  # plot size in inches
+    plt.rcParams["figure.autolayout"] = True
 
     f = np.logspace(1,5,num=500) # frequencies from 10**1 to 10**5
 
     corner = 1000
-    page = [[[], [], [], 'b', '']] # each entry is list of coefs, list of labels, list of polemix results, plots, path
+    page = [[[], [], [], [], 'b', '']] # each entry is list of coefs, list of labels, list of corners, list of polemix results, plots, path
     for a in argv[1:]:
         if a[0] == '-':
             if len(a) < 2:
@@ -70,7 +71,7 @@ def main():
                     return
                 corner = float(a[3:])
             if a[1] == 'b' or a[1] == 'a' or a[1] == 'p':
-                page.append([[], [], [], 'b', ''])
+                page.append([[], [], [], [], 'b', ''])
                 # Start the next figure
                 path = ""
                 if len(a) > 2:
@@ -79,8 +80,8 @@ def main():
                     else:
                         usage()
                         return
-                page[-1][3] = a[1]
-                page[-1][4] = path
+                page[-1][4] = a[1]
+                page[-1][5] = path
             continue
 
         res = re.search ('^\[(.*?)\] *(\S.*)$', a)
@@ -99,17 +100,18 @@ def main():
 
         page[-1][0].append([float (i) for i in re.split (", *", g1)])
         page[-1][1].append(g2)
-        page[-1][2].append(polemix (f, corner, page[-1][0][-1]))
+        page[-1][2].append(corner)
+        page[-1][3].append(polemix (f, corner, page[-1][0][-1]))
         
     for j in range (len(page)):
         if len(page[j][0]) == 0:
             continue
 
-        if page[j][3] == 'b':
+        if page[j][4] == 'b':
             plt.subplot(211)
-        if page[j][3] == 'a' or page[j][3] == 'b':
-            for i in range(len(page[j][2])):
-                plt.plot(f, 20*np.log10(abs(page[j][2][i])), label=page[j][1][i])
+        if page[j][4] == 'a' or page[j][4] == 'b':
+            for i in range(len(page[j][3])):
+                plt.plot(f, 20*np.log10(abs(page[j][3][i])), label=page[j][1][i])
             plt.xscale('log')
 
             plt.xlabel('frequency (Hz)')
@@ -117,19 +119,20 @@ def main():
             plt.grid(True)
             plt.legend()
 
-        if page[j][3] == 'b':
+        if page[j][4] == 'b':
             plt.subplot(212)
-        if page[j][3] == 'p' or page[j][3] == 'b':
-            for i in range(len(page[j][2])):
-                plt.plot(f, 180./np.pi*np.angle(page[j][2][i]), label=page[j][1][i])
+        if page[j][4] == 'p' or page[j][4] == 'b':
+            for i in range(len(page[j][3])):
+                plt.plot(f, 180./np.pi*np.angle(page[j][3][i]), label=page[j][1][i])
             plt.xscale('log')
 
             plt.xlabel('frequency (Hz)')
             plt.ylabel('phase shift (deg)')
             plt.grid(True)
-            plt.legend()
+            if page[j][4] == 'p':
+                plt.legend()
 
-        if page[j][4] != "":
-            plt.savefig(page[j][4], dpi=150)
+        if page[j][5] != "":
+            plt.savefig(page[j][5], dpi=150)
         plt.show()
 main()

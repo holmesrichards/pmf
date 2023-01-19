@@ -39,6 +39,8 @@ ED's mixers have been re-ordered, the resistors in the BP mixers have been reduc
 
 To accommodate other builders with other preferences (or future me with other preferences), in the last two filters enough resistor (or jumper) footprints have been provided to build almost any mixer allowing whatever filter responses you want. Each of the LP1, LP2, LP3, and LP4 signals has two footprints in series. For example, to re-create ED's seventh filter, [0, 1, 3, 6, 4]: Omit the R<sub>IN</sub> resistor, use 30k and a wire jumper for the two R<sub>LP1</sub> resistors, 10k+jumper for R<sub>LP2</sub>, 2k+3K for R<sub>LP3</sub>, and 7.5k+jumper for R<sub>LP4</sub>. To build the filters shown in the schematic, follow the silkscreen: Use wire jumpers for the jumper footprints and leave the DNF footprints empty.
 
+A catalog of 40+ filters is in [Docs/catalog.md](Docs/catalog.md).
+
 ### Expansion
 
 There is an expansion header on the PCB. This could be used to mount a daughterboard giving more mixes. Or it could be used for a cable connection to an expansion module, which could e.g. provide user-changeable mixes (5 rotary switches?) or a microcontroller-based variable mixer, potentially even with CV input to switch mixes. This repo includes a design for a daughterboard providing four additional builder-defined mixes. As with filters 7 and 8 on the main module, there are two footprints for each of the LP1, LP2, LP3, and LP4 signals and you can populate both with resistors, use one resistor and one jumper, or omit both to get the mixes you desire.
