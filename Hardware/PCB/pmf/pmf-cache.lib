@@ -1,12 +1,12 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ao_symbols_1N5817
+# AO_symbols_1N5817
 #
-DEF ao_symbols_1N5817 D 0 40 N N 1 F N
+DEF AO_symbols_1N5817 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "ao_symbols_1N5817" 0 -100 50 H V C CNN
-F2 "ao_tht:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
+F1 "AO_symbols_1N5817" 0 -100 50 H V C CNN
+F2 "AO_tht:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Tayda" 0 0 50 H I C CNN "Vendor"
 F5 "A-159" 0 0 50 H I C CNN "SKU"
@@ -22,12 +22,12 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ao_symbols_C
+# AO_symbols_C
 #
-DEF ao_symbols_C C 0 10 N Y 1 F N
+DEF AO_symbols_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "ao_symbols_C" 25 -100 50 H V L CNN
-F2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" 38 -150 50 H I C CNN
+F1 "AO_symbols_C" 25 -100 50 H V L CNN
+F2 "AO_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Tayda" 0 0 50 H I C CNN "Vendor"
 $FPLIST
@@ -41,12 +41,12 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ao_symbols_CP
+# AO_symbols_CP
 #
-DEF ao_symbols_CP C 0 10 N Y 1 F N
+DEF AO_symbols_CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "ao_symbols_CP" 25 -100 50 H V L CNN
-F2 "ao_tht:CP_Radial_D6.3mm_P2.50mm" 38 -150 50 H I C CNN
+F1 "AO_symbols_CP" 25 -100 50 H V L CNN
+F2 "AO_tht:CP_Radial_D6.3mm_P2.50mm" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Tayda" 0 0 50 H I C CNN "Vendor"
 $FPLIST
@@ -62,12 +62,12 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ao_symbols_Synth_power_2x5
+# AO_symbols_Synth_power_2x5
 #
-DEF ao_symbols_Synth_power_2x5 J 0 40 Y Y 1 F N
+DEF AO_symbols_Synth_power_2x5 J 0 40 Y Y 1 F N
 F0 "J" 0 -300 60 H V C CNN
-F1 "ao_symbols_Synth_power_2x5" 0 300 60 H V C CNN
-F2 "ao_tht:Power_Header" 0 0 60 H I C CNN
+F1 "AO_symbols_Synth_power_2x5" 0 300 60 H V C CNN
+F2 "AO_tht:Power_Header" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 "Tayda" 0 0 50 H I C CNN "Vendor"
 F5 "A-2939" 0 0 50 H I C CNN "SKU"
