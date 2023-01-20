@@ -1,10 +1,10 @@
 # pmf.kicad_sch BOM
 
-Mon 16 Jan 2023 01:01:19 PM EST
+Fri 20 Jan 2023 02:12:26 PM EST
 
-Generated from schematic by Eeschema 7.0.0-rc1-unknown-00d77f624a~164~ubuntu22.04.1
+Generated from schematic by Eeschema 7.0.0-rc1-unknown-7ab651f078~164~ubuntu22.04.1
 
-**Component Count:** 127
+**Component Count:** 129
 
 | Refs | Qty | Component | Description | Manufacturer | Part | Vendor | SKU |
 | ----- | --- | ---- | ----------- | ---- | ---- | ---- | ---- |
@@ -25,11 +25,11 @@ Generated from schematic by Eeschema 7.0.0-rc1-unknown-00d77f624a~164~ubuntu22.0
 | J14 | 1 | Conn_02x07_Odd_Even | Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/) |  |  |  |  |
 | R1, R5, R9, R14 | 4 | 82k | Resistor |  |  | Tayda |  |
 | R2 | 1 | 1.5M | Resistor |  |  | Tayda |  |
-| R3, R7, R11, R12, R16, R57, R59, R60, R61, R62, R63, R65, R66, R67, R68, R69, R70, R72 | 18 | 100k | Resistor |  |  | Tayda |  |
-| R4, R58, R71 | 3 | 1k | Resistor |  |  | Tayda |  |
+| R3, R7, R11, R12, R16, R57, R59, R60, R61, R62, R63, R65, R66, R67, R68, R69 | 16 | 100k | Resistor |  |  | Tayda |  |
+| R4 | 1 | 1.2k | Resistor |  |  | Tayda |  |
 | R6, R10, R15 | 3 | 220k | Resistor |  |  | Tayda |  |
 | R8 | 1 | 1M | Resistor |  |  | Tayda |  |
-| R13 | 1 | 51k | Resistor |  |  | Tayda |  |
+| R13 | 1 | 120k | Resistor |  |  | Tayda |  |
 | R17, R18, R64 | 3 | 47k | Resistor |  |  | Tayda |  |
 | R19, R21, R22, R23, R24, R33, R34, R48, R50, R56 | 10 | 30k | Resistor |  |  | Tayda |  |
 | R20 | 1 | 22k | Resistor |  |  | Tayda |  |
@@ -40,12 +40,15 @@ Generated from schematic by Eeschema 7.0.0-rc1-unknown-00d77f624a~164~ubuntu22.0
 | R32, R41, R44, R46, R52, R54 | 6 | 0R | Populate with wire jumper (resistor leg) |  |  | Tayda |  |
 | R43 | 1 | 750R | Resistor |  |  | Tayda |  |
 | R49 | 1 | 2k | Resistor |  |  | Tayda |  |
+| R58, R71 | 2 | 1k | Resistor |  |  | Tayda |  |
+| R70, R72, R73, R74 | 4 | 10k | Resistor |  |  | Tayda |  |
+| R75 | 1 | 51k | Resistor |  |  | Tayda |  |
 | RV1, RV4, RV6, RV7 | 4 | 20k | Trim-potentiometer |  |  | Tayda |  |
 | RV2, RV5 | 2 | 100k | Trim-potentiometer |  |  | Tayda |  |
-| RV3 | 1 | 500R | Trim-potentiometer |  |  | Tayda |  |
 | RV8, RV9, RV10, RV12, RV13 | 5 | 100k | Potentiometer |  |  | Tayda |  |
 | RV11, RV14 | 2 | 10k | Trim-potentiometer |  |  | Tayda |  |
 | SW1 | 1 | SW_Rotary12 | rotary switch with 12 positions |  |  | Tayda | A-1893 |
 | U1 | 1 | AS3320 |  |  |  |  |  |
-| U2, U3, U4 | 3 | TL072 | Dual operational amplifier, DIP-8 |  |  | Tayda | A-037 |
+| U2, U4 | 2 | TL072 | Dual operational amplifier, DIP-8 |  |  | Tayda | A-037 |
+| U3 | 1 | TL074 | Quad operational amplifier, DIP-14 |  |  | Tayda | A-1138 |
     
