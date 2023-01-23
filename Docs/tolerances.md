@@ -14,7 +14,7 @@ Below are Bode plots for a perfect 4-pole high pass filter, with coefficients [A
 
 Note how with an error in the second or fourth coefficient, in addition to the leveling off of the amplitude at DC, the phase flips 180° at around 300 to 500 Hz.
 
-Even with a 0.1% error the amplitude below about 200 Hz is significantly higher than with perfect coefficients, though probably not large enough to be objectionable in most situations. The phase flip occurs about 200 Hz, and may or may not be important if mixing with other signals of the same frequency.
+Even with a 0.1% error the amplitude below about 200 Hz is significantly higher than with perfect coefficients, though probably not large enough to be objectionable in most situations. The phase flip occurs about 200 Hz, and may or may not be important at this small amplitude if mixing with other signals of the same frequency.
 
 ![HP4_0.1%](../Images/hp4pole001.png)
 
@@ -50,4 +50,6 @@ while 4-pole, 0.1% errors is good at audible frequencies (with 1kHz corner):
 
 ![BP4_0.1%](../Images/bp4pole001.png)
 
-The lesson is, if you want accurate high pass or band pass filtering above 1 pole, and especially if phase flips at small amplitude are important, you need to calibrate carefully for unity DC gain in each filter stage, and you need matched resistors in the mixers; 1% tolerance is probably not good enough.
+These plots illustrate cases where *one* coefficient is inaccurate, but in reality all five are likely to vary randomly if randomly chosen resistors are used in the mixers. 1% tolerance is probably not good enough, at least for higher order high pass and band pass filters. Hand matching resistors at more like the 0.1% level is recommended.
+
+The filter gains, too, should be calibrated to be unity with high precision. But in fact the gains vary over the range of the frequency control voltage by as much as ~2%. However, these shifts are correlated: All stages experience approximately the same size shift in the same direction. Then the gain errors in the even stages (with positive coefficients in the pole sums) tend to cancel those in the odd stages (with negative coefficients). In addition most of the gain shift occurs at higher, less useful values of the control voltage. So as long as the stages are calibrated to unity gain at moderate control voltage, the effects of the gain shift should generally be quite tolerable.

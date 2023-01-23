@@ -8,14 +8,12 @@ This is a multimode VCF based on a [design](https://electricdruid.net/multimode-
 
 ### Changes from ED design
 
-* Added 51k resistor missing from original schematics (see comment section for ED post)
 * 82k resistors (RF) changed to 100k; 91k resistors (RC) to 82k + 20k trimmers.
-* 1.1k resistor on VEE changed to 1k + 500R trimmer.
-* Added variable bias voltage to VRES pin.
 * Added AC coupling capacitor on input signal to resonance compensation mixer.
-* Added second inverting stage on input to preserve phase
+* Added resistor on resonance input pin missing from original schematics. Changed its value from 51k to 120k.
+* Added second inverting stage on input to preserve phase. Reduced first stage gain to 0.82 and increased output stage gain by the same factor.
 * Changed ordering of 1st to 6th mixes.
-* In 4P HP mix, changed 4.99k resistor to sum of 2k and 3k which are much easier and cheaper to obtain.
+* In 4P HP mix, changed 4.99k resistor to sum of 2k and 3k.
 * Changed BP resistors for unity gain at peak.
 * Changed 7th mix to {1, 2, 2, 0, 0} notch.
 * Original had incorrect resistances for 8th mix; fixed.
@@ -25,15 +23,19 @@ This is a multimode VCF based on a [design](https://electricdruid.net/multimode-
 
 ### Discussion
 
-As discussed [here](Docs/tolerances.md), it is important that filter stages have unity DC gain and mixer ratios be correct at a level of about 1% or better, preferably more like 0.1%.
+As discussed [here](Docs/tolerances.md), it is important that filter stages have unity DC gain and mixer ratios be correct at a level of about 1% or better, preferably more like 0.1% for the mixer resistors.
 
 The 82k feedback resistors used in the ED design are a puzzle: Per the CEM3320 datasheet, they result in a gain of around 0.82. In the datasheet circuit these resistors are 100k giving gain 0.999. On the breadboard I found some gain variation, so I replaced the 91k resistors (RI, RC) with 82k + 20k trimmers.
 
-The datasheet also suggests using a trimmer on the VEE pin, and adding a variable bias on the VRES pin, to null out frequency and resonance CV feedthroughs.
+Some breadboard tests suggested AC coupling the INPUT signal into the resonance compensation mixer improves behavior.
 
-Since a DC bias on VRES affects resonance CV feedthrough, the ED design's resonance compensation mixer can lead to problems if there is a DC offset on the input signal. I have added a capacitor to AC couple that signal.
+The ED schematics omit a resistor on the resonance input pin. In the comments Tom Wiltshire says this should be 51k. I found this value caused self oscillation to start up at a very low position of the resonance knob, so changed it to 120k.
 
-ED's mixers have been re-ordered, the resistors in the BP mixers have been reduced to get unity gain at the peaks, and the seventh filter (a rather weird combination of things giving rise to a sort of band pass plus notch response) has been replaced with a second notch filter.
+With an input of 5 V (or -5 V), the filter stage outputs try to go to about 10 V. This is too large: With Vcc = 12 V, maximum output before clipping is about 9 V. I reduced the input gain by a factor of 0.82 to keep below that limit. ±5 V is the standard audio signal range in my synth. Of course there exist signal sources that go larger than 5 V — any 3340 based VCO that doesn't rescale the chip's outputs will give square waves going from 0 V to about 10.5 V! — and if you use such sources, they will need to be attenuated. Also, if you use two summed inputs they might exceed 5 V, so again some attenuation may be needed. I also added a second inverting stage to preserve the phase going into the filter.
+
+ED's mixers have been re-ordered, just because I felt 2 pole should go before 4 pole. The E96 4.99k resistor has been replaced by E24 2k and 3k in series, because who want to order one resistor from DigiKey because Tayda doesn't carry it? The resistor values used by ED in the BP mixers result in peak amplitudes 6 or 12 dB below the input level; I reduced them to get unity gain at the peaks. I wasn't that enthusiastic about the seventh filter — a rather weird combination of things giving rise to a sort of band pass plus notch response — so I replaced it with a second (sharper, deadlier) notch filter.
+
+I didn't see much point in messing around with a multiplexer chip. I used a rotary switch instead. If you really want electronically selectable filter shapes, see the Expansion section below.
 
 ### Choose your own
 
