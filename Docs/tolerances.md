@@ -12,13 +12,13 @@ Below are Bode plots for a perfect 4-pole high pass filter, with coefficients [A
 
 ![HP4_1%](../Images/hp4pole01.png)
 
-Note how with an error in the second or fourth coefficient, in addition to the leveling off of the amplitude at DC, the phase flips 180° at around 300 to 500 Hz.
+Note how with an error in the second or fourth coefficient, in addition to the leveling off of the amplitude at DC, the phase flips 180° at around 300 to 500 Hz. Under some circumstances this could be problematic if mixing with other signals of the same frequency.
 
-Even with a 0.1% error the amplitude below about 200 Hz is significantly higher than with perfect coefficients, though probably not large enough to be objectionable in most situations. The phase flip occurs about 200 Hz, and may or may not be important at this small amplitude if mixing with other signals of the same frequency.
+Even with a 0.1% error the amplitude below about 200 Hz is significantly higher than with perfect coefficients, but probably not large enough to be objectionable. The phase flip occurs about 200 Hz, and is also probably unimportant at this small amplitude.
 
 ![HP4_0.1%](../Images/hp4pole001.png)
 
-For the lower order HP filters the same thing happens but the sensitivity at DC to exact coefficients is lower. With 1% error the effect on the amplitude is pretty much negligible down to 10 Hz for 1-pole HP, though the change in phase is much bigger.
+For the lower order HP filters the same thing happens but the sensitivity at DC to exact coefficients is lower. With 1% error the effect on the amplitude is pretty much negligible down to 10 Hz for 1-pole HP.
 
 ![HP1_1%](../Images/hp1pole01.png)
 

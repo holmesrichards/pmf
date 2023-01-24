@@ -2,7 +2,7 @@ This is a work in progress; better README to come soon. Meanwhile:
 
 **Untested hardware and software — Do not assume anything works!**
 
-This is a multimode VCF based on a [design](https://electricdruid.net/multimode-filters-part-2-pole-mixing-filters) by Electric Druid. It uses pole mixing to achieve multiple filter behaviors.
+This is a multimode VCF based on a [design](https://electricdruid.net/multimode-filters-part-2-pole-mixing-filters) by Electric Druid (ED). It uses pole mixing to achieve multiple filter behaviors.
 
 ## Design notes
 
@@ -27,13 +27,13 @@ As discussed [here](Docs/tolerances.md), it is important that filter stages have
 
 The 82k feedback resistors used in the ED design are a puzzle: Per the CEM3320 datasheet, they result in a gain of around 0.82. In the datasheet circuit these resistors are 100k giving gain 0.999. On the breadboard I found some gain variation, so I replaced the 91k resistors (RI, RC) with 82k + 20k trimmers.
 
-If there is a DC offset on the input signal (if for instance it goes 0 to 5 V), then, in the ED design, turning up the resonance CV drives the DC offset of the output signal higher. Even with a 0 to 2 V input, the output can exceed 9 V due to the large offset. Adding a capacitor to AC couple the input signal to the resonance compensation mixer eliminates this problem.
+If there is a DC offset on the input signal (if for instance it goes 0 to 5 V), then, due to its being DC coupled to the resonance compensation mixer, turning up the resonance CV would drive the DC offset of the output signal higher. Even with a 0 to 2 V input, the output could exceed 9 V due to the large offset. This is too large: With Vcc = 12 V, maximum output before clipping is about 9 V. Adding a capacitor to AC couple the input signal to the compensation mixer eliminates this problem.
 
-The ED schematics omit a resistor on the resonance input pin. In the comments Tom Wiltshire says this should be 51k. I found this value caused self oscillation to start up at a very low position of the resonance knob, so changed it to 120k.
+The ED schematics omit a resistor on the resonance input pin. In the comments Tom Wiltshire says this should be 51k. I found this value would cause self oscillation to start up at a very low position of the resonance knob, so changed it to 120k.
 
-With an input of 5 V (or -5 V), the filter stage outputs try to go to about 10 V. This is too large: With Vcc = 12 V, maximum output before clipping is about 9 V. I reduced the input gain by a factor of 0.82 to keep below that limit. ±5 V is the standard audio signal range in my synth. Of course there exist signal sources that go larger than 5 V — any 3340 based VCO that doesn't rescale the chip's outputs will give square waves going from 0 V to about 10.5 V! — and if you use such sources, they will need to be attenuated. Also, if you use two summed inputs they might exceed 5 V, so again some attenuation may be needed. I also added a second inverting stage to preserve the phase going into the filter.
+With an input of 5 V (or -5 V), the filter stage outputs would try to go to about 10 V. I reduced the input gain by a factor of 0.82 to keep below that limit. ±5 V is the standard audio signal range in my synth. Of course there exist signal sources that go larger than 5 V — any 3340 based VCO that doesn't rescale the chip's outputs will give square waves going from 0 V to about 10.5 V! — and if you use such sources, they will need to be attenuated. Also, if you use two summed inputs they might exceed 5 V, so again some attenuation may be needed. I also added a second inverting stage to preserve the phase going into the filter.
 
-ED's mixers have been re-ordered, just because I felt 2 pole should go before 4 pole. The E96 4.99k resistor has been replaced by E24 2k and 3k in series, because who want to order one resistor from DigiKey because Tayda doesn't carry it? The resistor values used by ED in the BP mixers result in peak amplitudes 6 or 12 dB below the input level; I reduced them to get unity gain at the peaks. I wasn't that enthusiastic about the seventh filter — a rather weird combination of things giving rise to a sort of band pass plus notch response — so I replaced it with a second (sharper, deadlier) notch filter.
+ED's mixers have been re-ordered, just because I felt 2 pole should go before 4 pole. The E96 4.99k resistor has been replaced by E24 2k and 3k in series, because who want to order one resistor from DigiKey that Tayda doesn't carry? The resistor values used by ED in the BP mixers result in peak amplitudes 6 or 12 dB below the input level; I reduced them to get unity gain at the peaks. I wasn't that enthusiastic about the seventh filter — a rather weird combination of things giving rise to a sort of band pass plus notch response — so I replaced it with a second (sharper, deadlier) notch filter.
 
 I didn't see much point in messing around with a multiplexer chip. I used a rotary switch instead. If you really want electronically selectable filter shapes, see the Expansion section below.
 
@@ -99,7 +99,7 @@ For the formulas for pole mixing upon which these plots are based, see [https://
 
 ## GitHub repository
 
-* [https://github.com/holmesrichards/](https://github.com/holmesrichards/pmf)
+* [https://github.com/holmesrichards/pmf](https://github.com/holmesrichards/pmf)
 
 ## Submodules
 
