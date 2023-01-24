@@ -27,7 +27,7 @@ As discussed [here](Docs/tolerances.md), it is important that filter stages have
 
 The 82k feedback resistors used in the ED design are a puzzle: Per the CEM3320 datasheet, they result in a gain of around 0.82. In the datasheet circuit these resistors are 100k giving gain 0.999. On the breadboard I found some gain variation, so I replaced the 91k resistors (RI, RC) with 82k + 20k trimmers.
 
-Some breadboard tests suggested AC coupling the INPUT signal into the resonance compensation mixer improves behavior.
+If there is a DC offset on the input signal (if for instance it goes 0 to 5 V), then, in the ED design, turning up the resonance CV drives the DC offset of the output signal higher. Even with a 0 to 2 V input, the output can exceed 9 V due to the large offset. Adding a capacitor to AC couple the input signal to the resonance compensation mixer eliminates this problem.
 
 The ED schematics omit a resistor on the resonance input pin. In the comments Tom Wiltshire says this should be 51k. I found this value caused self oscillation to start up at a very low position of the resonance knob, so changed it to 120k.
 

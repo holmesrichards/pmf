@@ -1336,7 +1336,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 428bb7b9-a38e-4776-ac1c-21afd13ede80)
   )
-  (text "±5 V in gives filter outputs of about 0-10 V,\ntoo large a range (max 9 V with Vcc = 12 V)\nso 0.82 gain at input, restored at output"
+  (text "+5 V or -5 V in gives filter outputs of about \n10 V, too large (max 9 V with Vcc = 12 V)\nso 0.82 gain at input, restored at output"
     (at 73.66 24.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7bd26a1f-e3bd-48bf-8b3d-5e7830801938)
