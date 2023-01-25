@@ -1331,7 +1331,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1569bc50-241b-49f8-a09d-e11a67d53003)
   )
-  (text "CV input on 3320 is 18 mV/oct. Range should best \nbe -25 - +155 mV (total range 180 mV).\n\nHere 12 V knob range is divided down \nby 1/52 to 1/62, giving 231 to 194 mV.\n\nED design seems to assume positive CV \nsince it has only negative offset capability.\nI changed this.\n\n±5 V would divide down to ±96 to 81 mV. 0 - 10 V\nbecomes 0 - 192 to 161 mV."
+  (text "CV input on 3320 is 18 mV/oct. Range should best \nbe -25 - +155 mV (total range 180 mV).\n\nHere 12 V knob range is divided down \nby 1/52 to 1/62, giving 231 to 194 mV.\n\nED design has only negative offset capability.\nI changed this.\n\n±5 V would divide down to ±96 to 81 mV. 0 - 10 V\nbecomes 0 - 192 to 161 mV."
     (at 119.38 82.55 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 428bb7b9-a38e-4776-ac1c-21afd13ede80)
