@@ -570,6 +570,9 @@
   (junction (at 182.88 125.73) (diameter 0) (color 0 0 0 0)
     (uuid c8f4dd30-7d0f-4844-848c-4692b8522b80)
   )
+  (junction (at 137.16 60.96) (diameter 0) (color 0 0 0 0)
+    (uuid edea0c1a-7bfc-4c5f-b7dd-4c22a0439f14)
+  )
   (junction (at 193.04 118.11) (diameter 0) (color 0 0 0 0)
     (uuid ee76f4cd-e153-4465-9722-650c4676971f)
   )
@@ -652,7 +655,7 @@
     (stroke (width 0) (type default))
     (uuid 21396035-6982-4a6b-a1d3-38ebab65ffa4)
   )
-  (wire (pts (xy 137.16 50.8) (xy 137.16 63.5))
+  (wire (pts (xy 137.16 50.8) (xy 137.16 60.96))
     (stroke (width 0) (type default))
     (uuid 232d9a85-f339-49da-99ef-4af708fe0fe7)
   )
@@ -783,6 +786,10 @@
   (wire (pts (xy 118.11 118.11) (xy 119.38 118.11))
     (stroke (width 0) (type default))
     (uuid 6d855eed-543c-44f8-a5ad-816c51ce55c1)
+  )
+  (wire (pts (xy 137.16 60.96) (xy 137.16 63.5))
+    (stroke (width 0) (type default))
+    (uuid 6efbf420-bde3-4c30-9f04-8ff1a9b24eaa)
   )
   (wire (pts (xy 161.29 123.19) (xy 161.29 118.11))
     (stroke (width 0) (type default))
@@ -1591,6 +1598,34 @@
     )
   )
 
+  (symbol (lib_id "AO_symbols:TestPoint") (at 137.16 60.96 90) (unit 1)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5e70400f-0c66-463e-bbd6-7b76d97261e6)
+    (property "Reference" "TP3" (at 133.858 55.88 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CVf" (at 133.858 58.42 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "AO_tht:TestPoint_THTPad_D1.5mm_Drill0.7mm" (at 137.16 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 137.16 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Config" "DNF" (at 137.16 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a46cd0ad-d642-4288-83f9-e4366af01eb9))
+    (instances
+      (project "pmf"
+        (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/2085c2ec-887c-4fdb-9d07-ac0ffcad932c"
+          (reference "TP3") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "AO_symbols:R_POT_TRIM_3296W") (at 124.46 118.11 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5fb63548-0183-45f8-b2c1-c9d05b44c2c5)
@@ -2322,7 +2357,7 @@
   (symbol (lib_id "AO_symbols:TestPoint") (at 182.88 125.73 90) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c76e7ede-0b11-446a-8ef2-e4751a05cbfb)
-    (property "Reference" "TP4" (at 179.578 120.65 90)
+    (property "Reference" "TP5" (at 179.578 120.65 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LP3" (at 179.578 123.19 90)
@@ -2341,7 +2376,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/2085c2ec-887c-4fdb-9d07-ac0ffcad932c"
-          (reference "TP4") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
     )
@@ -2350,7 +2385,7 @@
   (symbol (lib_id "AO_symbols:TestPoint") (at 214.63 125.73 90) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cbdcd040-c4fa-4401-8a89-81be6ce03bde)
-    (property "Reference" "TP5" (at 211.328 120.65 90)
+    (property "Reference" "TP6" (at 211.328 120.65 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LP4" (at 211.328 123.19 90)
@@ -2369,7 +2404,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/2085c2ec-887c-4fdb-9d07-ac0ffcad932c"
-          (reference "TP5") (unit 1)
+          (reference "TP6") (unit 1)
         )
       )
     )
@@ -2445,7 +2480,7 @@
   (symbol (lib_id "AO_symbols:TestPoint") (at 151.13 125.73 90) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4bb3232-ff26-42c8-8a83-2d15afdd8ba0)
-    (property "Reference" "TP3" (at 147.828 120.65 90)
+    (property "Reference" "TP4" (at 147.828 120.65 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LP2" (at 147.828 123.19 90)
@@ -2464,7 +2499,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/2085c2ec-887c-4fdb-9d07-ac0ffcad932c"
-          (reference "TP3") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
     )

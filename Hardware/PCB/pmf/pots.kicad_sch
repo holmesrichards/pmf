@@ -1158,6 +1158,10 @@
     (stroke (width 0) (type default))
     (uuid ae67c24a-6dda-4d34-8337-3ee57aa25332)
   )
+  (wire (pts (xy 144.78 90.17) (xy 160.02 90.17))
+    (stroke (width 0) (type default))
+    (uuid b1b5c253-1237-4025-969c-a46fe9a6af20)
+  )
   (wire (pts (xy 100.33 77.47) (xy 95.25 77.47))
     (stroke (width 0) (type default))
     (uuid b1f19be0-a95b-4cef-99f3-0d7207ee0d9b)
@@ -1241,10 +1245,6 @@
   (wire (pts (xy 83.82 45.72) (xy 86.36 45.72))
     (stroke (width 0) (type default))
     (uuid d99898e4-dbbf-47db-ab2d-3d4b6018ca3e)
-  )
-  (wire (pts (xy 144.78 90.17) (xy 147.32 90.17))
-    (stroke (width 0) (type default))
-    (uuid da06e04f-7e1a-490a-a76e-560e4fa63dfe)
   )
   (wire (pts (xy 67.31 64.77) (xy 78.74 64.77))
     (stroke (width 0) (type default))
@@ -1371,35 +1371,35 @@
     (uuid dd046022-a295-4163-9e46-f39ee3ba0de3)
   )
 
-  (hierarchical_label "RES_CV_IN" (shape input) (at 71.12 157.48 180) (fields_autoplaced)
+  (hierarchical_label "RES_CV_IN_P" (shape input) (at 71.12 157.48 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 2949e767-49a3-4e4d-abe0-174240da2e33)
   )
-  (hierarchical_label "V{slash}OCT_IN" (shape input) (at 76.2 101.6 180) (fields_autoplaced)
+  (hierarchical_label "V{slash}OCT_IN_P" (shape input) (at 76.2 101.6 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 66afa810-81c9-4a01-a532-5d04b4d71717)
   )
-  (hierarchical_label "INPUT" (shape output) (at 133.35 50.8 0) (fields_autoplaced)
+  (hierarchical_label "INPUT_P" (shape output) (at 133.35 50.8 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6d4d5497-928f-4916-acf1-3d3bb1f69170)
   )
-  (hierarchical_label "FREQ_CV_IN" (shape input) (at 71.12 111.76 180) (fields_autoplaced)
+  (hierarchical_label "FREQ_CV_IN_P" (shape input) (at 71.12 111.76 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid a8da4f37-a8fc-4b5e-90cb-cc767f604129)
   )
-  (hierarchical_label "FREQ_CV" (shape output) (at 147.32 90.17 0) (fields_autoplaced)
+  (hierarchical_label "FREQ_CV_P" (shape output) (at 160.02 90.17 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid adca0bf3-af49-425f-a893-04269aff7a06)
   )
-  (hierarchical_label "RES_CV" (shape output) (at 154.94 148.59 0) (fields_autoplaced)
+  (hierarchical_label "RES_CV_P" (shape output) (at 154.94 148.59 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b70cd690-b14e-4169-8e9a-4f99ceb1b3fc)
   )
-  (hierarchical_label "IN2" (shape input) (at 66.04 48.26 180) (fields_autoplaced)
+  (hierarchical_label "IN2_P" (shape input) (at 66.04 48.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid d629f951-22f4-43b3-afd4-f5a83ec13bc7)
   )
-  (hierarchical_label "IN1" (shape input) (at 68.58 30.48 90) (fields_autoplaced)
+  (hierarchical_label "IN1_P" (shape input) (at 68.58 30.48 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f66a4776-a384-44b0-a6ad-61bf53c3c5ef)
   )
@@ -1620,7 +1620,7 @@
   (symbol (lib_id "AO_symbols:R") (at 104.14 133.35 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0aaf0380-c74a-4c09-91da-b1107984bd81)
-    (property "Reference" "R67" (at 104.14 128.6342 90)
+    (property "Reference" "R68" (at 104.14 128.6342 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 104.14 131.1711 90)
@@ -1640,7 +1640,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R67") (unit 1)
+          (reference "R68") (unit 1)
         )
       )
     )
@@ -1723,7 +1723,7 @@
   (symbol (lib_id "AO_symbols:R") (at 82.55 64.77 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0f590b3f-fad4-49f5-b9f3-9a53b68f82bc)
-    (property "Reference" "R59" (at 82.55 60.0542 90)
+    (property "Reference" "R60" (at 82.55 60.0542 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 82.55 62.5911 90)
@@ -1743,7 +1743,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R59") (unit 1)
+          (reference "R60") (unit 1)
         )
       )
     )
@@ -1927,7 +1927,7 @@
   (symbol (lib_id "AO_symbols:R") (at 130.81 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1b022368-347e-4f7c-a7ec-dc95356ad7f9)
-    (property "Reference" "R71" (at 130.81 85.09 90)
+    (property "Reference" "R72" (at 130.81 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "51k" (at 130.81 87.63 90)
@@ -1947,7 +1947,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R71") (unit 1)
+          (reference "R72") (unit 1)
         )
       )
     )
@@ -2106,7 +2106,7 @@
   (symbol (lib_id "AO_symbols:R") (at 82.55 163.83 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3a54957a-7b7b-4590-929e-7f9912b539ab)
-    (property "Reference" "R64" (at 82.55 159.1142 90)
+    (property "Reference" "R65" (at 82.55 159.1142 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 82.55 161.6511 90)
@@ -2126,7 +2126,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R64") (unit 1)
+          (reference "R65") (unit 1)
         )
       )
     )
@@ -2308,7 +2308,7 @@
   (symbol (lib_id "AO_symbols:R") (at 123.19 38.1 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 46916f45-05ad-4627-b5a0-3158af1028db)
-    (property "Reference" "R70" (at 123.19 33.02 90)
+    (property "Reference" "R71" (at 123.19 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 123.19 35.56 90)
@@ -2328,7 +2328,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R70") (unit 1)
+          (reference "R71") (unit 1)
         )
       )
     )
@@ -2362,7 +2362,7 @@
   (symbol (lib_id "AO_symbols:R") (at 119.38 146.05 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4bf226d7-8c98-4e0d-a9d2-f94e4c4a2070)
-    (property "Reference" "R69" (at 119.38 140.97 90)
+    (property "Reference" "R70" (at 119.38 140.97 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 119.38 143.51 90)
@@ -2382,7 +2382,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R69") (unit 1)
+          (reference "R70") (unit 1)
         )
       )
     )
@@ -2505,7 +2505,7 @@
   (symbol (lib_id "AO_symbols:R") (at 109.22 48.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5c3f7104-5ca0-4bcd-916e-c97acec7f343)
-    (property "Reference" "R68" (at 109.22 43.18 90)
+    (property "Reference" "R69" (at 109.22 43.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 109.22 45.72 90)
@@ -2525,7 +2525,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R68") (unit 1)
+          (reference "R69") (unit 1)
         )
       )
     )
@@ -2534,7 +2534,7 @@
   (symbol (lib_id "AO_symbols:R") (at 92.71 35.56 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 62d51462-3c8e-493a-a0c9-da721ffe977e)
-    (property "Reference" "R65" (at 92.71 30.48 90)
+    (property "Reference" "R66" (at 92.71 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "51k" (at 92.71 33.02 90)
@@ -2554,7 +2554,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R65") (unit 1)
+          (reference "R66") (unit 1)
         )
       )
     )
@@ -2640,7 +2640,7 @@
   (symbol (lib_id "AO_symbols:R") (at 76.2 35.56 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e1b3f99-3423-4ac4-8962-87f5eb501e81)
-    (property "Reference" "R57" (at 76.2 30.8442 90)
+    (property "Reference" "R58" (at 76.2 30.8442 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 76.2 33.3811 90)
@@ -2660,7 +2660,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R57") (unit 1)
+          (reference "R58") (unit 1)
         )
       )
     )
@@ -2694,7 +2694,7 @@
   (symbol (lib_id "AO_symbols:TestPoint") (at 198.12 101.6 0) (mirror x) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 818578bd-4149-401f-9fff-10e054036109)
-    (property "Reference" "TP9" (at 196.723 104.0673 0)
+    (property "Reference" "TP10" (at 196.723 104.0673 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "+12V" (at 196.723 106.6042 0)
@@ -2713,7 +2713,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "TP9") (unit 1)
+          (reference "TP10") (unit 1)
         )
       )
     )
@@ -2760,7 +2760,7 @@
   (symbol (lib_id "AO_symbols:R") (at 104.14 77.47 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 92e1d057-f377-416c-9138-7d1d9b3a8f51)
-    (property "Reference" "R66" (at 104.14 72.7542 90)
+    (property "Reference" "R67" (at 104.14 72.7542 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 104.14 75.2911 90)
@@ -2780,7 +2780,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R66") (unit 1)
+          (reference "R67") (unit 1)
         )
       )
     )
@@ -2814,7 +2814,7 @@
   (symbol (lib_id "AO_symbols:TestPoint") (at 223.52 102.87 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9835ec5f-07f3-4b6b-ba5b-475d8546c938)
-    (property "Reference" "TP11" (at 224.917 98.7333 0)
+    (property "Reference" "TP12" (at 224.917 98.7333 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "-12V" (at 224.917 101.2702 0)
@@ -2833,7 +2833,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "TP11") (unit 1)
+          (reference "TP12") (unit 1)
         )
       )
     )
@@ -2842,7 +2842,7 @@
   (symbol (lib_id "AO_symbols:R") (at 135.89 128.27 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9c5ff7e2-be9b-42bc-89ae-76e4ec1d4718)
-    (property "Reference" "R72" (at 135.89 123.19 90)
+    (property "Reference" "R73" (at 135.89 123.19 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 135.89 125.73 90)
@@ -2862,7 +2862,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R72") (unit 1)
+          (reference "R73") (unit 1)
         )
       )
     )
@@ -2946,7 +2946,7 @@
   (symbol (lib_id "AO_symbols:R") (at 76.2 48.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid af875a89-6db2-4524-9007-ff3530f443e9)
-    (property "Reference" "R58" (at 76.2 43.5442 90)
+    (property "Reference" "R59" (at 76.2 43.5442 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 76.2 46.0811 90)
@@ -2966,7 +2966,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R58") (unit 1)
+          (reference "R59") (unit 1)
         )
       )
     )
@@ -3000,7 +3000,7 @@
   (symbol (lib_id "AO_symbols:R") (at 137.16 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b52d7f98-09e8-44a7-9822-0bb5ed7c1ba6)
-    (property "Reference" "R73" (at 138.938 94.4153 0)
+    (property "Reference" "R74" (at 138.938 94.4153 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 138.938 96.9522 0)
@@ -3020,7 +3020,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R73") (unit 1)
+          (reference "R74") (unit 1)
         )
       )
     )
@@ -3169,7 +3169,7 @@
   (symbol (lib_id "AO_symbols:R") (at 82.55 118.11 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c628b523-8553-46e5-bfac-33a170dc3f9d)
-    (property "Reference" "R62" (at 82.55 113.3942 90)
+    (property "Reference" "R63" (at 82.55 113.3942 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "47k" (at 82.55 115.9311 90)
@@ -3189,7 +3189,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R62") (unit 1)
+          (reference "R63") (unit 1)
         )
       )
     )
@@ -3324,7 +3324,7 @@
   (symbol (lib_id "AO_symbols:R") (at 82.55 143.51 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid db55a4ff-148f-442d-b6d3-d1d9aad8ac22)
-    (property "Reference" "R63" (at 82.55 138.7942 90)
+    (property "Reference" "R64" (at 82.55 138.7942 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 82.55 141.3311 90)
@@ -3344,7 +3344,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R63") (unit 1)
+          (reference "R64") (unit 1)
         )
       )
     )
@@ -3412,7 +3412,7 @@
   (symbol (lib_id "AO_symbols:R") (at 82.55 101.6 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e7217139-db0e-460f-a30a-2f7188fd9cd8)
-    (property "Reference" "R61" (at 82.55 96.8842 90)
+    (property "Reference" "R62" (at 82.55 96.8842 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 82.55 99.4211 90)
@@ -3432,7 +3432,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R61") (unit 1)
+          (reference "R62") (unit 1)
         )
       )
     )
@@ -3441,7 +3441,7 @@
   (symbol (lib_id "AO_symbols:TestPoint") (at 209.55 102.87 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e7dd1850-d462-469a-8ac5-15a052937d39)
-    (property "Reference" "TP10" (at 210.947 98.7333 0)
+    (property "Reference" "TP11" (at 210.947 98.7333 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "GND" (at 210.947 101.2702 0)
@@ -3460,7 +3460,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "TP10") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -3563,7 +3563,7 @@
   (symbol (lib_id "AO_symbols:R") (at 82.55 87.63 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4320646-776e-48cf-9d5b-773e02c42035)
-    (property "Reference" "R60" (at 82.55 82.9142 90)
+    (property "Reference" "R61" (at 82.55 82.9142 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 82.55 85.4511 90)
@@ -3583,7 +3583,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "R60") (unit 1)
+          (reference "R61") (unit 1)
         )
       )
     )
