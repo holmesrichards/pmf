@@ -2206,7 +2206,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 25e0156b-dad1-4981-83c9-f2b25ebf5437)
   )
-  (text "Feedback ~ 30k/.82 to restore\namplitude reduced at input"
+  (text "Feedback 30k x 2 to restore\namplitude reduced at input"
     (at 168.91 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 337b10f9-5f9b-4667-ab7f-5e3d1bad28b9)
@@ -5113,7 +5113,7 @@
     (property "Reference" "R74" (at 162.56 137.16 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "6.8k" (at 162.56 139.7 90)
+    (property "Value" "30k" (at 162.56 139.7 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "AO_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 162.56 144.018 90)
