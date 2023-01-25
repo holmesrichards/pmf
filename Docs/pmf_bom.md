@@ -1,6 +1,6 @@
 # pmf.kicad_sch BOM
 
-Sun 22 Jan 2023 05:59:52 PM EST
+Tue 24 Jan 2023 11:19:05 PM EST
 
 Generated from schematic by Eeschema 7.0.0-rc1-unknown-0a7bd85cd6~164~ubuntu22.04.1
 
@@ -23,13 +23,13 @@ Generated from schematic by Eeschema 7.0.0-rc1-unknown-0a7bd85cd6~164~ubuntu22.0
 | J11 | 1 | Conn_02x07_Odd_Even | Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/) |  |  |  |  |
 | J13 | 1 | Conn_02x07_Odd_Even | Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/) |  |  |  |  |
 | J14 | 1 | Conn_02x07_Odd_Even | Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/) |  |  |  |  |
-| R1, R4, R9, R16, R65 | 5 | 82k | Resistor |  |  | Tayda |  |
-| R2, R6, R7, R12, R18, R55, R57, R58, R59, R60, R61, R63, R64, R66, R67 | 15 | 100k | Resistor |  |  | Tayda |  |
+| R1, R4, R9, R16 | 4 | 82k | Resistor |  |  | Tayda |  |
+| R2, R6, R7, R12, R18, R56, R58, R59, R60, R61, R62, R64, R65, R67, R68 | 15 | 100k | Resistor |  |  | Tayda |  |
 | R3 | 1 | 1.2k | Resistor |  |  | Tayda |  |
 | R5, R10, R17 | 3 | 220k | Resistor |  |  | Tayda |  |
 | R8 | 1 | 120k | Resistor |  |  | Tayda |  |
-| R11, R13, R62 | 3 | 47k | Resistor |  |  | Tayda |  |
-| R14, R19, R20, R21, R22, R31, R32, R46, R48, R54 | 10 | 30k | Resistor |  |  | Tayda |  |
+| R11, R13, R63 | 3 | 47k | Resistor |  |  | Tayda |  |
+| R14, R19, R20, R21, R22, R31, R32, R46, R48, R54, R55 | 11 | 30k | Resistor |  |  | Tayda |  |
 | R15 | 1 | 22k | Resistor |  |  | Tayda |  |
 | R23, R25, R27, R29, R34, R36, R38, R45, R53 | 9 | 15k | Resistor |  |  | Tayda |  |
 | R24, R35, R40, R49 | 4 | 7.5k | Resistor |  |  | Tayda |  |
@@ -38,10 +38,9 @@ Generated from schematic by Eeschema 7.0.0-rc1-unknown-0a7bd85cd6~164~ubuntu22.0
 | R30, R39, R42, R44, R50, R52 | 6 | 0R | Populate with wire jumper (resistor leg) |  |  | Tayda |  |
 | R41 | 1 | 750R | Resistor |  |  | Tayda |  |
 | R47 | 1 | 2k | Resistor |  |  | Tayda |  |
-| R56, R73 | 2 | 1k | Resistor |  |  | Tayda |  |
-| R68, R69, R70, R72 | 4 | 10k | Resistor |  |  | Tayda |  |
-| R71 | 1 | 51k | Resistor |  |  | Tayda |  |
-| R74 | 1 | 6.8k | Resistor |  |  | Tayda |  |
+| R57, R74 | 2 | 1k | Resistor |  |  | Tayda |  |
+| R66, R72 | 2 | 51k | Resistor |  |  | Tayda |  |
+| R69, R70, R71, R73 | 4 | 10k | Resistor |  |  | Tayda |  |
 | RV1, RV2, RV3, RV4 | 4 | 20k | Trim-potentiometer |  |  | Tayda |  |
 | RV5, RV11 | 2 | 10k | Trim-potentiometer |  |  | Tayda |  |
 | RV6, RV7, RV8, RV9, RV10 | 5 | 100k | Potentiometer |  |  | Tayda |  |
