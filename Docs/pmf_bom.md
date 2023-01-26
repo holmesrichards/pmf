@@ -1,10 +1,10 @@
 # pmf.kicad_sch BOM
 
-Tue 24 Jan 2023 11:19:05 PM EST
+Thu 26 Jan 2023 12:54:50 PM EST
 
 Generated from schematic by Eeschema 7.0.0-rc1-unknown-0a7bd85cd6~164~ubuntu22.04.1
 
-**Component Count:** 126
+**Component Count:** 130
 
 | Refs | Qty | Component | Description | Manufacturer | Part | Vendor | SKU |
 | ----- | --- | ---- | ----------- | ---- | ---- | ---- | ---- |
@@ -23,7 +23,11 @@ Generated from schematic by Eeschema 7.0.0-rc1-unknown-0a7bd85cd6~164~ubuntu22.0
 | J11 | 1 | Conn_02x07_Odd_Even | Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/) |  |  |  |  |
 | J13 | 1 | Conn_02x07_Odd_Even | Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/) |  |  |  |  |
 | J14 | 1 | Conn_02x07_Odd_Even | Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/) |  |  |  |  |
-| R1, R4, R9, R16 | 4 | 82k | Resistor |  |  | Tayda |  |
+| M1 | 1 | screw | M3 machine screw 6 mm |  |  |  |  |
+| M2 | 1 | nut | M3 nut |  |  |  |  |
+| M3 | 1 | washer | M3 washer |  |  |  |  |
+| M4 | 1 | spacer | M3 spacer FF 10 mm |  |  |  |  |
+| R1, R4, R9, R16 | 4 | 68k | Resistor |  |  | Tayda |  |
 | R2, R6, R7, R12, R18, R56, R58, R59, R60, R61, R62, R64, R65, R67, R68 | 15 | 100k | Resistor |  |  | Tayda |  |
 | R3 | 1 | 1.2k | Resistor |  |  | Tayda |  |
 | R5, R10, R17 | 3 | 220k | Resistor |  |  | Tayda |  |
@@ -41,7 +45,7 @@ Generated from schematic by Eeschema 7.0.0-rc1-unknown-0a7bd85cd6~164~ubuntu22.0
 | R57, R74 | 2 | 1k | Resistor |  |  | Tayda |  |
 | R66, R72 | 2 | 51k | Resistor |  |  | Tayda |  |
 | R69, R70, R71, R73 | 4 | 10k | Resistor |  |  | Tayda |  |
-| RV1, RV2, RV3, RV4 | 4 | 20k | Trim-potentiometer |  |  | Tayda |  |
+| RV1, RV2, RV3, RV4 | 4 | 50k | Trim-potentiometer |  |  | Tayda |  |
 | RV5, RV11 | 2 | 10k | Trim-potentiometer |  |  | Tayda |  |
 | RV6, RV7, RV8, RV9, RV10 | 5 | 100k | Potentiometer |  |  | Tayda |  |
 | SW1 | 1 | SW_Rotary12 | rotary switch with 12 positions |  |  | Tayda | A-1893 |
