@@ -51,3 +51,6 @@ SETUP.md
 Simulations/*.log
 Simulations/*.raw
 Simulations/*.txt
+cancan.png
+polemix2.py
+
