@@ -8,7 +8,7 @@ This is a multimode VCF based on a [design](https://electricdruid.net/multimode-
 
 ### Changes from ED design
 
-* 82k resistors (RF) changed to 100k; 91k resistors (RC) to 68k + 50k trimmers.
+* 82k resistors (RF) changed to 100k; 91k resistors (RC) to fixed + trimmer.
 * Added AC coupling capacitor on input signal to resonance compensation mixer.
 * Added resistor on resonance input pin missing from original schematics. Changed its value from 51k to 120k.
 * Added second inverting stage on input to preserve phase. Reduced first stage gain to 0.82 and increased output stage gain by the same factor.
@@ -25,7 +25,7 @@ This is a multimode VCF based on a [design](https://electricdruid.net/multimode-
 
 As discussed [here](Docs/tolerances.md), it is important that filter stages have unity DC gain and mixer ratios be correct at a level of about 1% or better, preferably more like 0.1% for the mixer resistors.
 
-The 82k feedback resistors used in the ED design are a puzzle: Per the CEM3320 datasheet, they result in a gain of around 0.82. In the datasheet circuit these resistors are 100k giving gain 0.999. On the breadboard I found some gain variation (even if I matched the resistors), so I replaced the 91k resistors (RI, RC) with 68k + 50k trimmers.
+The 82k feedback resistors used in the ED design are a puzzle: Per the CEM3320 datasheet, they result in a gain of around 0.82. In the datasheet circuit these resistors are 100k giving gain 0.999. On the breadboard I found some gain variation (even if I matched the resistors), so I replaced the 91k resistors (RI, RC) with fixed + trimmer combinations.
 
 If there is a DC offset on the input signal (if for instance it goes 0 to 5 V), then, due to its being DC coupled to the resonance compensation mixer, turning up the resonance CV would drive the DC offset of the output signal higher. Even with a 0 to 2 V input, the output could exceed 9 V due to the large offset. This is too large: With Vcc = 12 V, maximum output before clipping is about 9 V. Adding a capacitor to AC couple the input signal to the compensation mixer eliminates this problem.
 
