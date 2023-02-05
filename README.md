@@ -112,22 +112,18 @@ git submodule update
 ```
 
 
-Alternatively do
+Or if you download the repository as a zip file, you must also click on the "aoKicad" and "Kosmo\_panel" links on the GitHub page (they'll be in the Libraries folder and will have "@ something" after them) and download them as separate zip files which you can unzip into this repo's aoKicad and Kosmo\_panel directories (in the Libraries folder).
+
+If desired, copy the files from aoKicad and Kosmo\_panel to wherever you prefer. 
+
+Then in KiCad, go into Edit Symbols and add symbol libraries 
 
 ```
-git clone --recurse-submodules git@github.com:holmesrichards/pmf.git
-```
-
-Or if you download the repository as a zip file, you must also click on the "aoKicad" and "Kosmo\_panel" links on the GitHub page (they'll have "@ something" after them) and download them as separate zip files which you can unzip into this repo's aoKicad and Kosmo\_panel directories.
-
-If desired, copy the files from aoKicad and Kosmo\_panel to wherever you prefer (your KiCad user library directory, for instance, if you have one). Then in KiCad, go into Edit Symbols and add symbol libraries
-
-```
-aoKicad/ao_symbols
+aoKicad/AO_symbols
 Kosmo_panel/Kosmo
 ```
-and go into Edit Footprints and add footprint libraries
+and go into Edit Footprints and add footprint libraries 
 ```
-aoKicad/ao_tht
+aoKicad/AO_tht
 Kosmo_panel/Kosmo_panel.
 ```
