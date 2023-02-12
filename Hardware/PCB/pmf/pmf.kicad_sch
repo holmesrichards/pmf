@@ -1,4 +1,4 @@
-(kicad_sch (version 20221206) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid 1fce46f5-2003-4c7e-915f-b9b7dfc679d7)
 
@@ -30,7 +30,7 @@
       (property "ki_keywords" "power-flag" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+12V_1\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "+12V_1_0_1"
@@ -82,7 +82,7 @@
       (property "ki_keywords" "power-flag" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"-12V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"-12V_1\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "-12V_1_0_0"
@@ -837,7 +837,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 140.97 67.31 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 16ea2c16-2380-4c67-8faa-c8e134470841)
-    (property "Reference" "#PWR062" (at 137.16 67.31 0)
+    (property "Reference" "#PWR05" (at 137.16 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 144.78 67.945 90)
@@ -853,7 +853,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7"
-          (reference "#PWR062") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -874,6 +874,9 @@
     (property "Datasheet" "~" (at 128.27 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "2.54 mm pin header, 1x5 positions" (at 128.27 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid fa90352a-ee36-4a1d-858f-04cbbe7ee09d))
     (pin "2" (uuid 3c140a96-dd47-47c3-a5de-3e0b84f2ece9))
     (pin "3" (uuid bef4d589-4404-46b6-b6b7-1231be8550ad))
@@ -891,7 +894,7 @@
   (symbol (lib_id "AO_symbols:-12V_1") (at 140.97 69.85 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 396aef5c-8ee9-4816-bbb5-c6629665ac11)
-    (property "Reference" "#PWR063" (at 143.51 69.85 0)
+    (property "Reference" "#PWR06" (at 143.51 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-12V_1" (at 144.78 70.485 90)
@@ -907,7 +910,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7"
-          (reference "#PWR063") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -916,7 +919,7 @@
   (symbol (lib_id "power:-12V") (at 121.92 69.85 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4680b1d5-64fa-416a-b97d-de17c0650bb2)
-    (property "Reference" "#PWR067" (at 119.38 69.85 0)
+    (property "Reference" "#PWR03" (at 119.38 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-12V" (at 118.11 70.485 90)
@@ -932,7 +935,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7"
-          (reference "#PWR067") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -953,6 +956,9 @@
     (property "Datasheet" "~" (at 128.27 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "2.54 mm pin header, 1x6 positions" (at 128.27 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 19d1e871-9b71-4310-804d-823a805eebc7))
     (pin "2" (uuid 5bd1a586-db1d-41a6-99e7-420535abbb6d))
     (pin "3" (uuid d2fa3127-e931-4455-a2ae-2d9b18e183b0))
@@ -971,7 +977,7 @@
   (symbol (lib_id "power:GND1") (at 140.97 64.77 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 845624ad-65a1-4dfe-9e51-aad504244f5c)
-    (property "Reference" "#PWR064" (at 147.32 64.77 0)
+    (property "Reference" "#PWR04" (at 147.32 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 144.78 65.405 90)
@@ -987,7 +993,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7"
-          (reference "#PWR064") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1006,6 +1012,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "2.54 mm pin socket, 1x5 positions" (at 134.62 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ce576849-8359-4bba-a08a-efd0957a2300))
@@ -1037,6 +1046,9 @@
     (property "Datasheet" "~" (at 134.62 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "2.54 mm pin socket, 1x6 positions" (at 134.62 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d13b4060-c5b0-4bc2-92ad-9a3ed933fa5a))
     (pin "2" (uuid e6f68146-f36b-41d7-8103-69b951b65a00))
     (pin "3" (uuid ab76a99e-e67e-4421-a3e0-4ada26b96aee))
@@ -1055,7 +1067,7 @@
   (symbol (lib_id "power:GND") (at 121.92 64.77 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c4972c28-f299-4257-a192-e2acccf5e1ee)
-    (property "Reference" "#PWR065" (at 115.57 64.77 0)
+    (property "Reference" "#PWR01" (at 115.57 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 65.405 90)
@@ -1071,7 +1083,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7"
-          (reference "#PWR065") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -1080,7 +1092,7 @@
   (symbol (lib_id "power:+12V") (at 121.92 67.31 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e547b6a6-baf6-40f2-bab3-b5b1954be66e)
-    (property "Reference" "#PWR066" (at 125.73 67.31 0)
+    (property "Reference" "#PWR02" (at 125.73 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 118.11 67.945 90)
@@ -1096,7 +1108,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )

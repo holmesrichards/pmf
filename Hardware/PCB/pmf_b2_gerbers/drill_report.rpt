@@ -1,0 +1,27 @@
+Drill report for pmf_b2.kicad_pcb
+Created on Fri Feb 10 23:31:31 2023
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'pmf_b2.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (1 hole)
+    T2  0.700mm  0.0276"  (3 holes)
+    T3  0.800mm  0.0315"  (76 holes)
+    T4  1.000mm  0.0394"  (11 holes)
+    T5  1.300mm  0.0512"  (15 holes)
+
+    Total plated holes count 106
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T6  3.200mm  0.1260"  (3 holes)
+
+    Total unplated holes count 3

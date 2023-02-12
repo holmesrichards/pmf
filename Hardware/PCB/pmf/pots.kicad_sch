@@ -1,4 +1,4 @@
-(kicad_sch (version 20221206) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid 7863ec6a-be00-42cb-987a-5c0403bfb4ac)
 
@@ -30,7 +30,7 @@
       (property "ki_keywords" "power-flag" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+12V_1\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "+12V_1_0_1"
@@ -82,7 +82,7 @@
       (property "ki_keywords" "power-flag" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"-12V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"-12V_1\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "-12V_1_0_0"
@@ -167,6 +167,46 @@
         (pin passive line (at 3.81 0 180) (length 2.54)
           (name "A" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "AO_symbols:Board" (pin_names (offset 1.016)) (in_bom no) (on_board yes)
+      (property "Reference" "B" (at 1.27 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Board" (at -3.175 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "AO_tht:Board_Marker" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Config" "DNF" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Board marker annotation for KiKit" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Board_0_1"
+        (polyline
+          (pts
+            (xy 5.08 -2.54)
+            (xy 3.175 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 2.54)
+            (xy 1.27 2.54)
+            (xy 5.08 -2.54)
+            (xy 5.08 -0.635)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
         )
       )
     )
@@ -1469,6 +1509,9 @@
     (property "SKU" "A-553" (at 195.58 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "Ceramic capacitor, 2.5 mm lead spacing" (at 195.58 143.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 488b694c-c579-4271-8344-252ca28991fe))
     (pin "2" (uuid fe9f7514-4cc0-4365-8caf-048e1ce451cf))
     (instances
@@ -1540,7 +1583,7 @@
   (symbol (lib_id "power:GND1") (at 85.09 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 03f0ecba-8858-4e02-bc9e-2cc1ac9b9c9d)
-    (property "Reference" "#PWR048" (at 85.09 58.42 0)
+    (property "Reference" "#PWR053" (at 85.09 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 85.09 56.5134 0)
@@ -1556,7 +1599,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -1595,7 +1638,7 @@
   (symbol (lib_id "power:GND1") (at 95.25 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08efada3-7ac0-4f1d-830a-5394a2ea24f8)
-    (property "Reference" "#PWR049" (at 95.25 100.33 0)
+    (property "Reference" "#PWR054" (at 95.25 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 95.25 98.4234 0)
@@ -1611,7 +1654,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -1838,6 +1881,9 @@
     (property "SKU" "A-553" (at 224.79 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "Ceramic capacitor, 2.5 mm lead spacing" (at 224.79 143.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4a5bc463-6fa1-40e4-b1a0-7e591b181d0f))
     (pin "2" (uuid d772b670-ab88-4460-ae5d-a3775f3a6e23))
     (instances
@@ -1852,7 +1898,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 63.5 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1783cfde-75e9-4077-b437-efd5e6a77b30)
-    (property "Reference" "#PWR042" (at 63.5 142.24 0)
+    (property "Reference" "#PWR048" (at 63.5 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 63.5 134.8542 0)
@@ -1868,7 +1914,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -1877,7 +1923,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 223.52 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 180df8b2-5eef-405a-bacf-b2daa2684a97)
-    (property "Reference" "#FLG04" (at 223.52 84.455 0)
+    (property "Reference" "#FLG05" (at 223.52 84.455 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 223.52 82.55 0)
@@ -1893,7 +1939,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#FLG04") (unit 1)
+          (reference "#FLG05") (unit 1)
         )
       )
     )
@@ -1902,7 +1948,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 198.12 85.09 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 18ba341e-b057-4e09-af52-db8665759949)
-    (property "Reference" "#FLG05" (at 198.12 86.995 0)
+    (property "Reference" "#FLG03" (at 198.12 86.995 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 198.12 88.9 0)
@@ -1918,7 +1964,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#FLG05") (unit 1)
+          (reference "#FLG03") (unit 1)
         )
       )
     )
@@ -1956,7 +2002,7 @@
   (symbol (lib_id "power:GND1") (at 209.55 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1e1d9727-2f8a-46b3-8d81-7e6a43ef4468)
-    (property "Reference" "#PWR069" (at 209.55 92.71 0)
+    (property "Reference" "#PWR065" (at 209.55 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 209.55 90.8034 0)
@@ -1972,7 +2018,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR069") (unit 1)
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -1981,7 +2027,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 224.79 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 27b76d4b-5d64-46e9-8a74-67b379b370fe)
-    (property "Reference" "#PWR060" (at 224.79 135.89 0)
+    (property "Reference" "#PWR070" (at 224.79 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 224.79 128.5042 0)
@@ -1997,7 +2043,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -2006,7 +2052,7 @@
   (symbol (lib_id "power:GND1") (at 189.23 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e9e1a74-149b-4004-a152-a6821a5da21f)
-    (property "Reference" "#PWR053" (at 189.23 147.32 0)
+    (property "Reference" "#PWR059" (at 189.23 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 189.23 145.4134 0)
@@ -2022,7 +2068,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -2031,7 +2077,7 @@
   (symbol (lib_id "power:GND1") (at 68.58 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 364c614b-d3ed-4ec3-9216-2ad9a94ddaa2)
-    (property "Reference" "#PWR044" (at 68.58 46.99 0)
+    (property "Reference" "#PWR050" (at 68.58 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 68.58 45.0834 0)
@@ -2047,7 +2093,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -2056,7 +2102,7 @@
   (symbol (lib_id "AO_symbols:-12V_1") (at 224.79 147.32 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 37b9df25-c4a8-4fcb-b5a9-b6552fecf2c1)
-    (property "Reference" "#PWR061" (at 224.79 149.86 0)
+    (property "Reference" "#PWR071" (at 224.79 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-12V_1" (at 224.79 151.7634 0)
@@ -2072,7 +2118,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR061") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -2081,7 +2127,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 195.58 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 39ee3df8-92d8-4254-a53c-ad9ac40bb471)
-    (property "Reference" "#PWR054" (at 195.58 135.89 0)
+    (property "Reference" "#PWR060" (at 195.58 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 195.58 128.5042 0)
@@ -2097,7 +2143,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -2135,7 +2181,7 @@
   (symbol (lib_id "power:GND1") (at 73.66 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3bbba5c6-5284-40ea-8927-a272ada56982)
-    (property "Reference" "#PWR046" (at 73.66 129.54 0)
+    (property "Reference" "#PWR051" (at 73.66 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 73.66 127.6334 0)
@@ -2151,7 +2197,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -2160,7 +2206,7 @@
   (symbol (lib_id "power:GND1") (at 205.74 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3befe9d0-2179-441d-890b-c7e456fd5db7)
-    (property "Reference" "#PWR075" (at 205.74 59.69 0)
+    (property "Reference" "#PWR064" (at 205.74 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 205.74 57.7834 0)
@@ -2176,7 +2222,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR075") (unit 1)
+          (reference "#PWR064") (unit 1)
         )
       )
     )
@@ -2185,7 +2231,7 @@
   (symbol (lib_id "power:GND1") (at 209.55 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3df3e745-1ed2-44cb-a36e-fac2bc3d8546)
-    (property "Reference" "#PWR057" (at 209.55 109.22 0)
+    (property "Reference" "#PWR066" (at 209.55 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 209.55 107.3134 0)
@@ -2201,7 +2247,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -2237,8 +2283,8 @@
     )
   )
 
-  (symbol (lib_id "AO_symbols:R_POT_TRIM_3296W") (at 120.65 90.17 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "AO_symbols:R_POT_TRIM_3296W") (at 120.65 90.17 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 44ab54f0-40f3-4b8f-b1e1-34ee436beac9)
     (property "Reference" "RV11" (at 120.65 93.2164 90)
       (effects (font (size 1.27 1.27)))
@@ -2337,7 +2383,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 198.12 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4b7f6f21-eeff-462f-b286-9fb09191627f)
-    (property "Reference" "#PWR068" (at 198.12 88.9 0)
+    (property "Reference" "#PWR062" (at 198.12 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 198.12 81.5142 0)
@@ -2353,7 +2399,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR068") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -2455,7 +2501,7 @@
   (symbol (lib_id "power:GND1") (at 73.66 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 548874e9-2369-447c-9e1f-731ad23d6e1d)
-    (property "Reference" "#PWR047" (at 73.66 175.26 0)
+    (property "Reference" "#PWR052" (at 73.66 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 73.66 173.3534 0)
@@ -2471,7 +2517,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -2480,7 +2526,7 @@
   (symbol (lib_id "AO_symbols:-12V_1") (at 223.52 86.36 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 58bdec34-f1f6-4d92-ac80-9c144aa33638)
-    (property "Reference" "#PWR070" (at 223.52 88.9 0)
+    (property "Reference" "#PWR068" (at 223.52 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-12V_1" (at 223.52 90.8034 0)
@@ -2496,7 +2542,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR070") (unit 1)
+          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -2563,7 +2609,7 @@
   (symbol (lib_id "power:GND1") (at 124.46 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 668d5e43-fbfb-4eb9-a173-e43f7494ee32)
-    (property "Reference" "#PWR051" (at 124.46 158.75 0)
+    (property "Reference" "#PWR057" (at 124.46 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 124.46 156.8434 0)
@@ -2579,7 +2625,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -2588,7 +2634,7 @@
   (symbol (lib_id "power:GND1") (at 63.5 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ca2d601-9d45-4841-abec-9e168bd980f7)
-    (property "Reference" "#PWR043" (at 63.5 154.94 0)
+    (property "Reference" "#PWR049" (at 63.5 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 63.5 153.0334 0)
@@ -2604,7 +2650,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -2669,7 +2715,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 63.5 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f2ebcfa-4553-415e-acd5-834cd47e85ab)
-    (property "Reference" "#PWR076" (at 63.5 63.5 0)
+    (property "Reference" "#PWR044" (at 63.5 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 63.5 56.1142 0)
@@ -2685,7 +2731,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -2789,7 +2835,7 @@
   (symbol (lib_id "AO_symbols:-12V_1") (at 195.58 147.32 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 94bb4582-7ff1-4a5f-8851-3768ee5735cb)
-    (property "Reference" "#PWR055" (at 195.58 149.86 0)
+    (property "Reference" "#PWR061" (at 195.58 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-12V_1" (at 195.58 151.7634 0)
@@ -2805,7 +2851,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -2871,7 +2917,7 @@
   (symbol (lib_id "power:GND1") (at 137.16 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a44311f8-0899-47fe-aa1b-a41a5f0d98db)
-    (property "Reference" "#PWR052" (at 137.16 107.95 0)
+    (property "Reference" "#PWR058" (at 137.16 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 137.16 106.0434 0)
@@ -2887,7 +2933,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -2918,10 +2964,37 @@
     )
   )
 
+  (symbol (lib_id "AO_symbols:Board") (at 247.65 110.49 0) (unit 1)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid aa740966-75c9-4175-8726-73cec421c324)
+    (property "Reference" "B2" (at 254 109.855 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Board" (at 254 112.395 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "AO_tht:Board_Marker" (at 247.65 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 247.65 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Config" "DNF" (at 247.65 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "pmf"
+        (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
+          (reference "B2") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "AO_symbols:-12V_1") (at 223.52 102.87 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid acc325d7-f708-4762-9ead-e9373e2f8d3e)
-    (property "Reference" "#PWR059" (at 223.52 105.41 0)
+    (property "Reference" "#PWR069" (at 223.52 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-12V_1" (at 223.52 107.3134 0)
@@ -2937,7 +3010,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -2975,7 +3048,7 @@
   (symbol (lib_id "power:GND1") (at 95.25 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b2f58bbb-cd5c-40c2-8abb-2e0c599cb722)
-    (property "Reference" "#PWR050" (at 95.25 156.21 0)
+    (property "Reference" "#PWR055" (at 95.25 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 95.25 154.3034 0)
@@ -2991,7 +3064,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -3067,13 +3140,13 @@
     )
   )
 
-  (symbol (lib_id "AO_symbols:R_POT_TRIM_3296W") (at 63.5 64.77 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "AO_symbols:R_POT_TRIM_3296W") (at 63.5 64.77 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid bd6f7371-dd8e-4768-82c2-ecd73602a067)
-    (property "Reference" "RV5" (at 61.7221 63.9353 0)
+    (property "Reference" "RV5" (at 61.7221 65.6047 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "10k" (at 61.7221 66.4722 0)
+    (property "Value" "10k" (at 61.7221 63.0678 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "pmf:Potentiometer_Bourns_3296X_Horizontal" (at 63.5 64.77 0)
@@ -3144,7 +3217,7 @@
   (symbol (lib_id "power:GND1") (at 114.3 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c61dccc5-5683-4a82-9a19-2ffb7b333a34)
-    (property "Reference" "#PWR074" (at 114.3 60.96 0)
+    (property "Reference" "#PWR056" (at 114.3 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 114.3 59.0534 0)
@@ -3160,7 +3233,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR074") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -3214,6 +3287,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "SKU" "A-553" (at 195.58 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Ceramic capacitor, 2.5 mm lead spacing" (at 195.58 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 14048ce4-91de-4cc2-869b-463dce23d8e4))
@@ -3274,7 +3350,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 209.55 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d3566b13-1879-46b9-bb6e-b9f677293565)
-    (property "Reference" "#FLG03" (at 209.55 84.455 0)
+    (property "Reference" "#FLG04" (at 209.55 84.455 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 209.55 82.55 0)
@@ -3290,7 +3366,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#FLG03") (unit 1)
+          (reference "#FLG04") (unit 1)
         )
       )
     )
@@ -3299,7 +3375,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 63.5 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9856574-26dc-4889-b8cc-f4dad3807a39)
-    (property "Reference" "#PWR040" (at 63.5 86.36 0)
+    (property "Reference" "#PWR046" (at 63.5 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 63.5 78.9742 0)
@@ -3315,7 +3391,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -3369,6 +3445,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "SKU" "A-553" (at 224.79 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Ceramic capacitor, 2.5 mm lead spacing" (at 224.79 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e285a9ea-024a-4830-a8bd-313858a082ce))
@@ -3469,7 +3548,7 @@
   (symbol (lib_id "power:GND1") (at 218.44 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f31b6306-9e4c-4974-8d5b-efcc322861c3)
-    (property "Reference" "#PWR058" (at 218.44 147.32 0)
+    (property "Reference" "#PWR067" (at 218.44 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 218.44 145.4134 0)
@@ -3485,7 +3564,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -3538,7 +3617,7 @@
   (symbol (lib_id "power:GND1") (at 63.5 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f40b2fb2-f182-4969-8d85-113e2f2dfead)
-    (property "Reference" "#PWR041" (at 63.5 99.06 0)
+    (property "Reference" "#PWR047" (at 63.5 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND1" (at 63.5 97.1534 0)
@@ -3554,7 +3633,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -3592,7 +3671,7 @@
   (symbol (lib_id "AO_symbols:+12V_1") (at 198.12 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fa53106a-f079-456a-804d-c45ae1e5cd58)
-    (property "Reference" "#PWR056" (at 198.12 105.41 0)
+    (property "Reference" "#PWR063" (at 198.12 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V_1" (at 198.12 98.0242 0)
@@ -3608,7 +3687,7 @@
     (instances
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/0aa8016e-2b4e-464b-bdf9-8e797d920379"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
     )
