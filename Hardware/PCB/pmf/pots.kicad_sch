@@ -1367,20 +1367,28 @@
     (uuid ff1deaa9-ae62-4adb-a2cc-7762bc029ebe)
   )
 
-  (text "Added 2nd stage to\npreserve phase" (at 113.03 30.48 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 1569bc50-241b-49f8-a09d-e11a67d53003)
+  (text_box "+5 V or -5 V in gives filter outputs of about 10 V without resonance and even more with, too large (max 9 V with Vcc = 12 V) so 0.51 gain at input, restored at output"
+    (at 72.644 15.2748 0) (size 45.744 9.8712)
+    (stroke (width -0.0001) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 48b8014f-d4be-46cf-84df-e3d01115b09d)
   )
-  (text "CV input on 3320 is 18 mV/oct. Range should best \nbe -25 - +155 mV (total range 180 mV).\n\nHere 12 V knob range is divided down \nby 1/52 to 1/62, giving 231 to 194 mV.\n\nED design has only negative offset capability.\nI changed this.\n\n±5 V would divide down to ±96 to 81 mV. 0 - 10 V\nbecomes 0 - 192 to 161 mV."
-    (at 119.38 82.55 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 428bb7b9-a38e-4776-ac1c-21afd13ede80)
+  (text_box "CV input on 3320 is 18 mV/oct. Range should best be -25 - +155 mV (total range 180 mV).\n\nHere 12 V knob range is divided down by 1/52 to 1/62, giving 231 to 194 mV.\n\nED design has only negative offset capability. I changed this.\n\n±5 V would divide down to ±96 to 81 mV. 0 - 10 V becomes 0 - 192 to 161 mV."
+    (at 118.364 59.293 0) (size 51.9366 24.273)
+    (stroke (width -0.0001) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 9e3d8fe8-d2fa-4a7b-a9d8-dd397fb9ad66)
   )
-  (text "+5 V or -5 V in gives filter outputs of about \n10 V without resonance and even more with, \ntoo large (max 9 V with Vcc = 12 V)\nso 0.51 gain at input, restored at output"
-    (at 73.66 24.13 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 7bd26a1f-e3bd-48bf-8b3d-5e7830801938)
+  (text_box "Added 2nd stage to preserve phase"
+    (at 112.014 25.7396 0) (size 20.6586 5.7564)
+    (stroke (width -0.0001) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid f1282d4d-1464-4a91-8851-25eea8afb26c)
   )
+
   (text "Signal input" (at 50.8 29.21 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid a0556e9b-ab7d-4f8c-9c76-8deaae5f7a55)
