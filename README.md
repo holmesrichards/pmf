@@ -100,30 +100,3 @@ For the formulas for pole mixing upon which these plots are based, see [https://
 ## GitHub repository
 
 * [https://github.com/holmesrichards/pmf](https://github.com/holmesrichards/pmf)
-
-## Submodules
-
-This repo uses submodules aoKicad and Kosmo_panel, which provide needed libaries for KiCad. To clone:
-
-```
-git clone git@github.com:holmesrichards/pmf.git
-git submodule init
-git submodule update
-```
-
-
-Or if you download the repository as a zip file, you must also click on the "aoKicad" and "Kosmo\_panel" links on the GitHub page (they'll be in the Libraries folder and will have "@ something" after them) and download them as separate zip files which you can unzip into this repo's aoKicad and Kosmo\_panel directories (in the Libraries folder).
-
-If desired, copy the files from aoKicad and Kosmo\_panel to wherever you prefer. 
-
-Then in KiCad, go into Edit Symbols and add symbol libraries 
-
-```
-aoKicad/AO_symbols
-Kosmo_panel/Kosmo
-```
-and go into Edit Footprints and add footprint libraries 
-```
-aoKicad/AO_tht
-Kosmo_panel/Kosmo_panel.
-```
