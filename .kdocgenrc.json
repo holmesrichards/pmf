@@ -1,0 +1,10 @@
+{
+    "enabled": [
+        "schem_pdf",
+        "ibom",
+        "bom",
+        "pcb_svg",
+        "pcb_pdf",
+	"readme"
+    ]
+}

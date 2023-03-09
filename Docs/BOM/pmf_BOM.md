@@ -1,10 +1,10 @@
 # pmf.kicad_sch BOM
 
-Mon 13 Feb 2023 10:27:23 PM EST
+Thu 09 Mar 2023 11:07:45 AM EST
 
-Generated from schematic by Eeschema 7.0.0
+Generated from schematic by Eeschema 7.0.0-da2b9df05c~171~ubuntu22.04.1
 
-**Component Count:** 143
+**Component Count:** 149
 
 | Refs | Qty | Component | Description | Manufacturer | Part | Vendor | SKU |
 | ----- | --- | ---- | ----------- | ---- | ---- | ---- | ---- |
@@ -34,9 +34,10 @@ Generated from schematic by Eeschema 7.0.0
 | R12, R15, R63 | 3 | 47k | Resistor |  |  | Tayda |  |
 | R17, R19–22, R31, R32, R46, R48, R54, R55 | 11 | 30k | Resistor |  |  | Tayda |  |
 | R18 | 1 | 22k | Resistor |  |  | Tayda |  |
-| R23, R25, R27, R29, R34, R36, R38 | 7 | 15k | Resistor |  |  | Tayda |  |
+| R23, R25, R27, R29, R34, R36, R38, R45, R53 | 9 | 15k | Resistor |  |  | Tayda |  |
 | R24, R35, R40, R49 | 4 | 7.5k | Resistor |  |  | Tayda |  |
 | R26, R33 | 2 | 3k | Resistor |  |  | Tayda |  |
+| R28, R37, R43, R51 | 4 | DNF | Do not populate |  |  | Tayda |  |
 | R30, R39, R42, R44, R50, R52 | 6 | 0R | Populate with wire jumper (resistor leg) |  |  | Tayda |  |
 | R41 | 1 | 750R | Resistor |  |  | Tayda |  |
 | R47 | 1 | 2k | Resistor |  |  | Tayda |  |
@@ -56,4 +57,4 @@ Generated from schematic by Eeschema 7.0.0
 | ZSC1–6 | 6 | Screw | M3 machine screw 6 mm |  |  |  |  |
 | ZSP1–3 | 3 | Spacer | M3 spacer FF 10 mm |  |  |  |  |
 | ZWA1–3 | 3 | Washer | M3 washer |  |  |  |  |
-    
+
