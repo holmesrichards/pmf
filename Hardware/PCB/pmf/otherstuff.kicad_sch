@@ -4601,7 +4601,7 @@
   )
 
   (symbol (lib_id "AO_symbols:R") (at 135.89 116.84 90) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f694a5c-bfd1-4895-8248-25562a70d6d4)
     (property "Reference" "R45" (at 138.43 115.57 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -5636,7 +5636,7 @@
   )
 
   (symbol (lib_id "AO_symbols:R") (at 146.05 119.38 90) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid ad7039c4-c4a4-4824-8e30-8a6fc3427460)
     (property "Reference" "R53" (at 148.59 118.11 90)
       (effects (font (size 1.27 1.27)) (justify right))
