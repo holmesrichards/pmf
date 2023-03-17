@@ -408,7 +408,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "pmf"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {

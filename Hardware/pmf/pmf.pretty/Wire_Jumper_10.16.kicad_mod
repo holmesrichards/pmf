@@ -33,7 +33,7 @@
     (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp dcc59e8a-9487-491a-b09d-0a30a37e9f5d))
   (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp 07411dcc-2788-48a3-86d6-9a1e7e649cf6))
   (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp 42f4201b-968f-4355-92ae-c15343525dc0))
-  (model "${KICAD_AOKICAD}/AO_tht_3d/Wire_jumper_10.16.step"
+  (model "${KICAD_USER_3DMODEL_DIR}/AO_tht_3d/Wire_jumper_10.16.step"
     (offset (xyz 5 0 -2))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
