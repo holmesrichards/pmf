@@ -1,17 +1,17 @@
 # pmf.kicad_sch BOM
 
-Thu 09 Mar 2023 04:01:12 PM EST
+Sun 02 Apr 2023 11:19:23 AM EDT
 
-Generated from schematic by Eeschema 7.0.0-da2b9df05c~171~ubuntu22.04.1
+Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
 
-**Component Count:** 124
+**Component Count:** 148
 
 | Refs | Qty | Component | Description | Manufacturer | Part | Vendor | SKU |
 | ----- | --- | ---- | ----------- | ---- | ---- | ---- | ---- |
 | C1, C3, C5, C7, C14 | 5 | 330pF | Polypropylene film capacitor, 5 mm lead spacing | WIMA | FKP2D003301D00JSSD | Tayda | 1928-1236-ND |
 | C2, C4, C6, C8, C9 | 5 | 1uF | Film capacitor, 5 mm lead spacing |  |  | Tayda |  |
 | C10, C11 | 2 | 10uF | Electrolytic capacitor, 2.5 mm lead spacing |  |  | Tayda | A-4349 |
-| C12, C13, C15–18 | 6 | 100nF | Ceramic capacitor, 2.5 mm lead spacing |  |  | Tayda | A-553 |
+| C12, C13, C15–20 | 8 | 100nF | Ceramic capacitor, 2.5 mm lead spacing |  |  | Tayda | A-553 |
 | D1, D2 | 2 | 1N5817 | Schottky Barrier Rectifier Diode, DO-41 |  |  | Tayda | A-159 |
 | D3, D4 | 2 | 1N4148 | Standard switching diode, DO-35 |  |  | Tayda | A-157 |
 | J1 | 1 | Conn_01x06_Pin | 2.54 mm pin header, 1x6 positions |  |  |  |  |
@@ -21,9 +21,10 @@ Generated from schematic by Eeschema 7.0.0-da2b9df05c~171~ubuntu22.04.1
 | J5–9, J12 | 6 | AudioJack2 | Audio Jack, 2 Poles (Mono / TS) |  |  | Tayda | A-1121 |
 | J10 | 1 | Synth_power_2x5 | Pin header 2.54 mm 2x5 |  |  | Tayda | A-2939 |
 | J11 | 1 | Conn_02x07_Odd_Even | Shrouded IDC header, 2x7 positions |  |  |  |  |
-| J14 | 1 | Conn_02x07_Odd_Even | 2.54 mm pin header, 2x7 positions |  |  |  |  |
-| J15, J16 | 2 | DIP-8 | 8 pin DIP socket |  |  |  |  |
-| J17 | 1 | DIP-14 | 14 pin DIP socket |  |  |  |  |
+| J13 | 1 | Conn_02x07_Odd_Even | IDC connector, 2x7 positions |  |  |  |  |
+| J14, J15 | 2 | DIP-8 | 8 pin DIP socket |  |  |  |  |
+| J16 | 1 | Conn_02x07_Odd_Even | 2.54 mm pin header, 2x7 positions |  |  |  |  |
+| J17 | 1 | DIP-14 | 14 pin DIP socket |  |  | Tayda | A-004 |
 | J18 | 1 | DIP-18 | 18 pin DIP socket |  |  |  |  |
 | R1, R3, R8, R13 | 4 | 82k | Resistor |  |  | Tayda |  |
 | R2, R6, R7, R11, R16, R56, R58–62, R64, R65, R67, R68 | 15 | 100k | Resistor |  |  | Tayda |  |
@@ -45,9 +46,16 @@ Generated from schematic by Eeschema 7.0.0-da2b9df05c~171~ubuntu22.04.1
 | RV1–4 | 4 | 20k | Bourns 3296W |  |  | Tayda |  |
 | RV5, RV11 | 2 | 10k | Bourns 3296X (side screw) |  |  | Tayda |  |
 | RV6–10 | 5 | 100k | 16 mm board mount linear potentiometer |  |  | Tayda |  |
-| U1 | 1 | AS3320 | VCF | Alfa |  |  |  |
+| SW1 | 1 | SW_Rotary12 | rotary switch with 12 positions |  |  | Tayda | A-1893 |
+| U1, U3 | 2 | TL074 | Quad operational amplifier, DIP-14 |  |  | Tayda | A-1138 |
 | U2, U4 | 2 | TL072 | Dual operational amplifier, DIP-8 |  |  | Tayda | A-037 |
-| U3 | 1 | TL074 | Quad operational amplifier, DIP-14 |  |  | Tayda | A-1138 |
+| U5 | 1 | AS3320 | VCF | Alfa |  |  |  |
+| W1 | 1 | Ribbon_Cable | 14 conductor 1.27 mm pitch ribbon cable 12 cm |  |  |  |  |
+| ZKN1 | 1 | Knob_MF-A04 | MF-A04 knob |  |  |  |  |
+| ZKN2–6 | 5 | Knob_MF-A03 | MF-A03 knob |  |  |  |  |
+| ZSC1–6 | 6 | Screw | M3 machine screw 6 mm |  |  |  |  |
+| ZSP1–3 | 3 | Spacer | M3 spacer FF 10 mm |  |  |  |  |
+| ZWA1–3 | 3 | Washer | M3 washer |  |  |  |  |
 
 ## Resistors in color band order
 |Value|Qty|Refs|
