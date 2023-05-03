@@ -1,6 +1,4 @@
-This is a work in progress; better README to come soon. Meanwhile:
-
-**Untested hardware and software — Do not assume anything works!**
+# Pole mixing filter
 
 This is a multimode VCF based on a [design](https://electricdruid.net/multimode-filters-part-2-pole-mixing-filters) by Electric Druid (ED). It uses pole mixing to achieve multiple filter behaviors.
 
@@ -11,7 +9,8 @@ This is a multimode VCF based on a [design](https://electricdruid.net/multimode-
 * 82k resistors (RF) changed to 100k; 91k resistors (RC) to fixed + trimmer.
 * Added AC coupling capacitor on input signal to resonance compensation mixer.
 * Added resistor on resonance input pin missing from original schematics. Changed its value from 51k to 120k.
-* Added second inverting stage on input to preserve phase. Reduced first stage gain to 0.82 and increased output stage gain by the same factor.
+* Added op amp buffers and pulldown resistors on LP1–4 after AC coupling capacitors.
+* Added second inverting stage on input to preserve phase. Reduced first stage gain to 0.51 and increased output stage gain by the same factor.
 * Changed ordering of 1st to 6th mixes.
 * In 4P HP mix, changed 4.99k resistor to sum of 2k and 3k.
 * Changed BP resistors for unity gain at peak.
@@ -31,11 +30,13 @@ If there is a DC offset on the input signal (if for instance it goes 0 to 5 V), 
 
 The ED schematics omit a resistor on the resonance input pin. In the comments Tom Wiltshire says this should be 51k. I found this value would cause self oscillation to start up at a very low position of the resonance knob, so changed it to 120k.
 
-With an input of 5 V (or -5 V), the filter stage outputs would try to go to about 10 V. I reduced the input gain by a factor of 0.82 to keep below that limit. ±5 V is the standard audio signal range in my synth. Of course there exist signal sources that go larger than 5 V — any 3340 based VCO that doesn't rescale the chip's outputs will give square waves going from 0 V to about 10.5 V! — and if you use such sources, they will need to be attenuated. Also, if you use two summed inputs they might exceed 5 V, so again some attenuation may be needed. I also added a second inverting stage to preserve the phase going into the filter.
+With an input of 5 V (or -5 V) or above, the filter stage outputs would try to go to or above about 10 V. I reduced the input gain by a factor of 0.51 to keep below that limit. ±5 V is the standard audio signal range in my synth. Of course if you use two summed inputs they might exceed 5 V, so some additional attenuation may be needed. I also added a second inverting stage to preserve the phase going into the filter.
 
 ED's mixers have been re-ordered, just because I felt 2 pole should go before 4 pole. The E96 4.99k resistor has been replaced by E24 2k and 3k in series, because who want to order one resistor from DigiKey that Tayda doesn't carry? The resistor values used by ED in the BP mixers result in peak amplitudes 6 or 12 dB below the input level; I reduced them to get unity gain at the peaks. I wasn't that enthusiastic about the seventh filter — a rather weird combination of things giving rise to a sort of band pass plus notch response — so I replaced it with a second (sharper, deadlier) notch filter.
 
 I didn't see much point in messing around with a multiplexer chip. I used a rotary switch instead. If you really want electronically selectable filter shapes, see the Expansion section below.
+
+The mixers that are not selected by the rotary switch had floating outputs and corrupted the LP1–LP4 signals until I added op amp buffers after the AC coupling capacitors. I believe the same problem would occur with a multiplexer. To avoid bias current charging of the capacitors, I also added 1M resistors to ground between the capacitors and the op amps.
 
 ### Choose your own
 
@@ -45,7 +46,7 @@ A catalog of 40+ filters is in [Docs/catalog.md](Docs/catalog.md).
 
 ### Expansion
 
-There is an expansion header on the PCB. This could be used to mount a daughterboard giving more mixes. Or it could be used for a cable connection to an expansion module, which could e.g. provide user-changeable mixes (5 rotary switches?) or a microcontroller-based variable mixer, potentially even with CV input to switch mixes. This repo includes a design for a daughterboard providing four additional builder-defined mixes. As with filters 7 and 8 on the main module, there are two footprints for each of the LP1, LP2, LP3, and LP4 signals and you can populate both with resistors, use one resistor and one jumper, or omit both to get the mixes you desire.
+There is an expansion header on the PCB. This could be used to mount a daughterboard giving more mixes. Or it could be used for a ribbon cable connection to an expansion module, which could e.g. provide user-changeable mixes (5 rotary switches?) or a microcontroller-based variable mixer, potentially even with CV input to switch mixes. This repo includes a design for a daughterboard providing four additional builder-defined mixes. As with filters 7 and 8 on the main module, there are two footprints for each of the LP1, LP2, LP3, and LP4 signals and you can populate both with resistors, use one resistor and one jumper, or omit both to get the mixes you desire. This daughterboard has not been built or tested yet.
 
 ### Filters
 
@@ -78,14 +79,7 @@ The plots above were produced with a Python script included in this repo's Softw
 For the formulas for pole mixing upon which these plots are based, see [https://expeditionelectronics.com/Diy/Polemixing/math](https://expeditionelectronics.com/Diy/Polemixing/math). I believe there are some errors: the formulas for the imaginary parts of the numerator and denominator should have the opposite sign.
 
 ## Current draw
- mA +12 V,  mA -12 V
-
-
-## Photos
-
-![]()
-
-![]()
+? mA +12 V, ? mA -12 V
 
 ## Documentation
 
