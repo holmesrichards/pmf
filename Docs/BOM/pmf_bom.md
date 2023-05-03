@@ -1,10 +1,10 @@
 # pmf.kicad_sch BOM
 
-Sun 02 Apr 2023 11:19:23 AM EDT
+Tue 04 Apr 2023 08:02:15 PM EDT
 
 Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
 
-**Component Count:** 148
+**Component Count:** 152
 
 | Refs | Qty | Component | Description | Manufacturer | Part | Vendor | SKU |
 | ----- | --- | ---- | ----------- | ---- | ---- | ---- | ---- |
@@ -43,6 +43,7 @@ Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
 | R57, R74 | 2 | 1k | Resistor |  |  | Tayda |  |
 | R66, R72 | 2 | 51k | Resistor |  |  | Tayda |  |
 | R69–71, R73 | 4 | 10k | Resistor |  |  | Tayda |  |
+| R75–78 | 4 | 1M | Resistor |  |  | Tayda |  |
 | RV1–4 | 4 | 20k | Bourns 3296W |  |  | Tayda |  |
 | RV5, RV11 | 2 | 10k | Bourns 3296X (side screw) |  |  | Tayda |  |
 | RV6–10 | 5 | 100k | 16 mm board mount linear potentiometer |  |  | Tayda |  |
@@ -63,6 +64,7 @@ Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
 |1k|2|R57, R74|
 |10k|4|R69–71, R73|
 |100k|15|R2, R6, R7, R11, R16, R56, R58–62, R64, R65, R67, R68|
+|1M|4|R75–78|
 |1.2k|1|R4|
 |120k|1|R10|
 |15k|9|R23, R25, R27, R29, R34, R36, R38, R45, R53|
