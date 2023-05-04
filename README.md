@@ -1,6 +1,6 @@
 # Pole mixing filter
 
-This is a multimode VCF based on a [design](https://electricdruid.net/multimode-filters-part-2-pole-mixing-filters) by Electric Druid (ED). It uses pole mixing to achieve multiple filter behaviors.
+This is a multimode VCF in Kosmo format based on a [design](https://electricdruid.net/multimode-filters-part-2-pole-mixing-filters) by Electric Druid (ED). It uses pole mixing to achieve multiple filter behaviors.
 
 ## Design notes
 
