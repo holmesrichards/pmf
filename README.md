@@ -83,13 +83,12 @@ For the formulas for pole mixing upon which these plots are based, see [https://
 
 ## Documentation
 
-* [Schematic](Docs/pmf.pdf)
-* PCB layout: [front](Docs/pmf_layout_front.pdf), [back](Docs/pmf_layout_back.pdf)
-* [BOM](Docs/pmf_bom.md)
-* [Daughterboard schematic](Docs/pmf_daughter.pdf)
-* Daughterboard PCB layout: [front](Docs/pmf_daughter_layout_front.pdf), [back](Docs/pmf_daughter_layout_back.pdf)
-* [Daughterboard BOM](Docs/pmf_daughter_bom.md)
-* [Build notes](Docs/build.md)
+* [Schematic](Docs/pmf_schematic.pdf)
+* PCB layout: [front of board 1](Docs/Layout/pmf_B1/pmf_B1_front.svg), [back of board 1](Docs/Layout/pmf_B1/pmf_B1_back.svg), [front of board 2](Docs/Layout/pmf_B2/pmf_B2_front.svg), [back of board 2](Docs/Layout/pmf_B2/pmf_B2_back.svg)
+* [BOM](Docs/BOM/pmf_bom.md)
+* [Daughterboard schematic](Docs/pmf_daughter_schematic.pdf)
+* Daughterboard PCB layout: [front](Docs/Layout/pmf_daughter/pmf_daughter_front.svg), [back](Docs/Layout/pmf_daughter/pmf_daughter_back.svg)
+* [Daughterboard BOM](Docs/BOM/pmf_daughter_bom.md)
 
 ## GitHub repository
 
