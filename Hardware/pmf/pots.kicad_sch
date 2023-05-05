@@ -1372,8 +1372,8 @@
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 9e3d8fe8-d2fa-4a7b-a9d8-dd397fb9ad66)
   )
-  (text_box "Added 2nd stage to preserve phase"
-    (at 112.014 25.7396 0) (size 20.6586 5.7564)
+  (text_box "Added 2nd stage with the thought of preserving phase, but phase is inverted by output stage... probably better without this!"
+    (at 132.08 19.685 0) (size 20.6586 15.875)
     (stroke (width -0.0001) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))

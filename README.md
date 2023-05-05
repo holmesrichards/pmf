@@ -10,7 +10,7 @@ This is a multimode VCF in Kosmo format based on a [design](https://electricdrui
 * Added AC coupling capacitor on input signal to resonance compensation mixer.
 * Added resistor on resonance input pin missing from original schematics. Changed its value from 51k to 120k.
 * Added op amp buffers and pulldown resistors on LP1–4 after AC coupling capacitors.
-* Added second inverting stage on input to preserve phase. Reduced first stage gain to 0.51 and increased output stage gain by the same factor.
+* Added second inverting stage on input. Reduced first stage gain to 0.51 and increased output stage gain by the same factor.
 * Changed ordering of 1st to 6th mixes.
 * In 4P HP mix, changed 4.99k resistor to sum of 2k and 3k.
 * Changed BP resistors for unity gain at peak.
@@ -30,7 +30,7 @@ If there is a DC offset on the input signal (if for instance it goes 0 to 5 V), 
 
 The ED schematics omit a resistor on the resonance input pin. In the comments Tom Wiltshire says this should be 51k. I found this value would cause self oscillation to start up at a very low position of the resonance knob, so changed it to 120k.
 
-With an input of 5 V (or -5 V) or above, the filter stage outputs would try to go to or above about 10 V. I reduced the input gain by a factor of 0.51 to keep below that limit. ±5 V is the standard audio signal range in my synth. Of course if you use two summed inputs they might exceed 5 V, so some additional attenuation may be needed. I also added a second inverting stage to preserve the phase going into the filter.
+With an input of 5 V (or -5 V) or above, the filter stage outputs would try to go to or above about 10 V. I reduced the input gain by a factor of 0.51 to keep below that limit. ±5 V is the standard audio signal range in my synth. Of course if you use two summed inputs they might exceed 5 V, so some additional attenuation may be needed. I also added a second inverting stage with the thought of preserving the phase going into the filter. However there is an inverting stage at the output, so it probably would have been better to leave this second stage out. Not quite sure what I was thinking!
 
 ED's mixers have been re-ordered, just because I felt 2 pole should go before 4 pole. The E96 4.99k resistor has been replaced by E24 2k and 3k in series, because who want to order one resistor from DigiKey that Tayda doesn't carry? The resistor values used by ED in the BP mixers result in peak amplitudes 6 or 12 dB below the input level; I reduced them to get unity gain at the peaks. I wasn't that enthusiastic about the seventh filter — a rather weird combination of things giving rise to a sort of band pass plus notch response — so I replaced it with a second (sharper, deadlier) notch filter.
 
