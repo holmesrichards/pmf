@@ -61,90 +61,6 @@
         )
       )
     )
-    (symbol "Kosmo:Led_Hole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 2.413 1.397 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Led_Hole" (at 6.223 -1.143 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Kosmo_panel:Kosmo_LED_Hole" (at 2.921 3.683 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at -0.127 0.127 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Led_Hole_1_1"
-        (polyline
-          (pts
-            (xy -1.016 0)
-            (xy -1.778 0)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.762 -0.762)
-            (xy -1.27 -1.27)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.762 0.762)
-            (xy -1.27 1.27)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.778)
-            (xy 0 -1.016)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.016)
-            (xy 0 1.778)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -1.27)
-            (xy 0.762 -0.762)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 1.27)
-            (xy 0.762 0.762)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 0)
-            (xy 1.016 0)
-          )
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 0.635)
-          (stroke (width 0.2032) (type default))
-          (fill (type background))
-        )
-      )
-    )
     (symbol "Kosmo:Mounting_Holes" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "H" (at 0 1.27 0)
         (effects (font (size 1.27 1.27)))
@@ -200,68 +116,6 @@
         (pin passive line (at 0 -6.35 90) (length 2.54)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Kosmo:Switch_Hole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 4.826 1.397 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Switch_Hole" (at 9.906 -1.778 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Kosmo_panel:Kosmo_Switch_Hole" (at 0.635 6.604 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Switch_Hole_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 5.08)
-          )
-          (stroke (width 1.4986) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0.127) (radius 3.81)
-          (stroke (width 0.508) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "Switch_Hole_1_1"
-        (pin passive line (at 0 -6.35 90) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Kosmo:Trimmer_Hole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 2.54 1.016 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Trimmer_Hole" (at 8.255 -1.27 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Kosmo_panel:Kosmo_Trimmer_Pot_Hole" (at -2.286 3.048 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Trimmer_Hole_0_1"
-        (polyline
-          (pts
-            (xy -0.889 0)
-            (xy 0.889 0)
-          )
-          (stroke (width 0.3048) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 0.9906)
-          (stroke (width 0.3048) (type default))
-          (fill (type background))
         )
       )
     )
@@ -1160,7 +1014,7 @@
     (property "Value" "Mounting_Holes" (at 254 24.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Kosmo_panel:Kosmo_Panel_Dual_Mounting_Holes" (at 256.54 22.86 0)
+    (property "Footprint" "Kosmo_panel:Kosmo_Panel_Dual_Slotted_Mounting_Holes" (at 256.54 22.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 256.54 22.86 0)
@@ -1168,7 +1022,7 @@
     )
     (pin "1" (uuid d59becd9-6958-4c61-b5af-042b5dd6bd4c))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H14") (unit 1)
         )
@@ -1193,7 +1047,7 @@
     )
     (pin "1" (uuid fee3285b-9670-45c2-a824-36396455004b))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR012") (unit 1)
         )
@@ -1210,7 +1064,7 @@
     (property "Value" "Mounting_Holes" (at 241.3 24.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Kosmo_panel:Kosmo_Panel_Dual_Mounting_Holes" (at 243.84 22.86 0)
+    (property "Footprint" "Kosmo_panel:Kosmo_Panel_Dual_Slotted_Mounting_Holes" (at 243.84 22.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 243.84 22.86 0)
@@ -1218,7 +1072,7 @@
     )
     (pin "1" (uuid 3936d775-ee26-4ae4-8cca-7efd926937d4))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H11") (unit 1)
         )
@@ -1243,7 +1097,7 @@
     )
     (pin "1" (uuid a1d5378b-717e-48f0-a0c2-69423f1f4abc))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR011") (unit 1)
         )
@@ -1268,7 +1122,7 @@
     )
     (pin "1" (uuid e150f7b1-3648-4807-bd14-1b5050ff7c68))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H1") (unit 1)
         )
@@ -1276,99 +1130,26 @@
     )
   )
 
-  (symbol (lib_id "Kosmo:Led_Hole") (at 254 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005f0bd9d5)
-    (property "Reference" "H13" (at 252.73 66.04 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Led_Hole" (at 250.19 72.39 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Kosmo_panel:Kosmo_LED_Hole" (at 256.921 64.897 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 253.873 68.453 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "H13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Kosmo:Pot_Hole") (at 232.41 67.31 0) (unit 1)
+  (symbol (lib_id "Kosmo:Pot_Hole") (at 50.8 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f0be8d9)
-    (property "Reference" "H10" (at 237.109 67.5132 0)
+    (property "Reference" "H10" (at 55.499 95.4532 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Pot_Hole" (at 237.109 69.8246 0)
+    (property "Value" "Pot_Hole" (at 55.499 97.7646 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Kosmo_panel:Kosmo_Pot_Hole" (at 232.41 67.31 0)
+    (property "Footprint" "Kosmo_panel:Kosmo_Pot_Hole" (at 50.8 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 232.41 67.31 0)
+    (property "Datasheet" "" (at 50.8 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 51c86b68-5cb5-455a-9af4-2728c2ea9f32))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Kosmo:Switch_Hole") (at 232.41 49.53 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005f0bf34f)
-    (property "Reference" "H9" (at 237.109 48.8442 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Switch_Hole" (at 237.109 51.1556 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Kosmo_panel:Kosmo_Switch_Hole" (at 233.045 42.926 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 232.41 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1c7613b9-c8f0-4ce2-9a40-512a531f1e8b))
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "H9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Kosmo:Trimmer_Hole") (at 250.19 49.53 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005f0bfe6d)
-    (property "Reference" "H12" (at 251.968 48.3616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Trimmer_Hole" (at 251.968 50.673 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Kosmo_panel:Kosmo_Trimmer_Pot_Hole" (at 247.904 46.482 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 250.19 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "H12") (unit 1)
         )
       )
     )
@@ -1391,7 +1172,7 @@
     )
     (pin "1" (uuid c17f9d86-e648-4ce1-ad3d-7baa4b2f2de8))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR01") (unit 1)
         )
@@ -1399,51 +1180,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 232.41 73.66 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 50.8 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f0c12be)
-    (property "Reference" "#PWR010" (at 232.41 80.01 0)
+    (property "Reference" "#PWR010" (at 50.8 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 232.537 78.0542 0)
+    (property "Value" "GND" (at 50.927 105.9942 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 232.41 73.66 0)
+    (property "Footprint" "" (at 50.8 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 232.41 73.66 0)
+    (property "Datasheet" "" (at 50.8 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e6ed44f0-2ce8-46b7-8537-5b105ed09e47))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR010") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 232.41 55.88 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00005f0c186a)
-    (property "Reference" "#PWR09" (at 232.41 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 232.537 60.2742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 232.41 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 232.41 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 54f26871-2cb8-46b6-91ad-a71f0c73e8c1))
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1466,7 +1222,7 @@
     )
     (pin "1" (uuid ee9cb705-4d84-4a1b-a770-3da83952c996))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H3") (unit 1)
         )
@@ -1491,7 +1247,7 @@
     )
     (pin "1" (uuid 213d5d40-041d-4bb1-99f7-35237e42a98a))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR03") (unit 1)
         )
@@ -1516,7 +1272,7 @@
     )
     (pin "1" (uuid 810e832e-b4a7-4dee-9dd3-2694e371f9d7))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H5") (unit 1)
         )
@@ -1541,7 +1297,7 @@
     )
     (pin "1" (uuid b99daa8d-2f43-446b-a4fa-1d6ad08a267a))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR05") (unit 1)
         )
@@ -1566,7 +1322,7 @@
     )
     (pin "1" (uuid 92cf185b-88d3-4f37-92c1-f0c5e1a06aaa))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H6") (unit 1)
         )
@@ -1591,7 +1347,7 @@
     )
     (pin "1" (uuid 296fcea1-e317-44a8-afc9-a243e938cae8))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR06") (unit 1)
         )
@@ -1616,7 +1372,7 @@
     )
     (pin "1" (uuid 8cf53eff-c619-4019-a22d-454bfb147fa1))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H4") (unit 1)
         )
@@ -1641,7 +1397,7 @@
     )
     (pin "1" (uuid 3e9c5eb5-b990-418b-917d-06e6e8f87d55))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR04") (unit 1)
         )
@@ -1666,7 +1422,7 @@
     )
     (pin "1" (uuid 16d90a48-4ee8-4652-8ca1-89885df7875e))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "H2") (unit 1)
         )
@@ -1691,109 +1447,9 @@
     )
     (pin "1" (uuid 71c24c9b-f97f-4d5f-b90a-5ee6638d0a99))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Kosmo:Jack_Hole") (at 127 50.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000061596f4e)
-    (property "Reference" "H7" (at 130.429 51.0032 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Jack_Hole" (at 130.429 53.3146 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Kosmo_panel:Kosmo_Jack_Hole" (at 127 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 127 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3ea4a693-650e-4031-97fb-5e4e635889cc))
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "H7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 127 55.88 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000061596f54)
-    (property "Reference" "#PWR07" (at 127 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 127.127 60.2742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 127 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 127 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 891e40df-83c3-49f1-8396-1a6c77e464bb))
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Kosmo:Jack_Hole") (at 127 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000061596f5a)
-    (property "Reference" "H8" (at 130.429 76.4032 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Jack_Hole" (at 130.429 78.7146 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Kosmo_panel:Kosmo_Jack_Hole" (at 127 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 127 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e58eed01-7f60-44c6-b9ef-44373a8ea5fd))
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "H8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 127 81.28 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000061596f60)
-    (property "Reference" "#PWR08" (at 127 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 127.127 85.6742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 127 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 127 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7097b0a6-aefb-44c3-8da1-f211c65daa60))
-    (instances
-      (project "Kosmo_100mm"
-        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
-          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -1808,7 +1464,7 @@
     (property "Value" "Holes" (at 182.3212 51.943 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 175.26 50.8 0)
+    (property "Footprint" "pmf_panel:pmf_panel_holes" (at 175.26 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 175.26 50.8 0)
@@ -1818,7 +1474,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "GRAF1") (unit 1)
         )
@@ -1835,7 +1491,7 @@
     (property "Value" "Art" (at 182.3212 58.293 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 175.26 57.15 0)
+    (property "Footprint" "pmf_panel:pmf_panel_art" (at 175.26 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 175.26 57.15 0)
@@ -1845,7 +1501,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "GRAF2") (unit 1)
         )
@@ -1872,7 +1528,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "GRAF3") (unit 1)
         )
@@ -1897,13 +1553,138 @@
     )
     (pin "1" (uuid 334e017f-f89d-4261-a9db-9ee7d31609fa))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR013") (unit 1)
         )
       )
       (project "Kosmo_25mm"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR07") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Kosmo:Jack_Hole") (at 50.8 120.65 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3cfdd1e1-ef34-455c-832b-9a7b4e4c2cce)
+    (property "Reference" "H9" (at 54.229 120.8532 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Rotary_Switch_Hole" (at 54.229 123.1646 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Kosmo_panel:Kosmo_Jack_Hole" (at 50.8 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 50.8 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1df7312a-3414-4584-b2e0-747824d18a43))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "H9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 100.965 101.6 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 51b67190-f0c6-4610-8dbe-4971a3161695)
+    (property "Reference" "#PWR08" (at 100.965 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 101.092 105.9942 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 100.965 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 100.965 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5e2f5bb7-781b-4a63-965e-8454d7ff2140))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "#PWR08") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Kosmo:Pot_Hole") (at 100.965 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7df3c93c-ae9b-463c-9a43-86b9d7d13cb5)
+    (property "Reference" "H8" (at 105.664 95.4532 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Pot_Hole" (at 105.664 97.7646 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Kosmo_panel:Kosmo_Pot_Hole" (at 100.965 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 100.965 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b16877e4-a0d1-4f8e-8c3d-3ca2c1d7ff67))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "H8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 158.75 101.6 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 97187780-df8f-4e3c-8b51-72c22384a7a5)
+    (property "Reference" "#PWR015" (at 158.75 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 158.877 105.9942 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 158.75 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 158.75 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4c11a596-7fc3-4e85-8118-d84f05101df7))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "#PWR015") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 76.2 101.6 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9db9696d-8e22-4c32-8989-d924cfe5dab1)
+    (property "Reference" "#PWR07" (at 76.2 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 76.327 105.9942 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 76.2 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 76.2 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 962df6f4-4d0f-4e8e-a92f-51388f933000))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#PWR07") (unit 1)
         )
       )
@@ -1927,7 +1708,7 @@
     )
     (pin "1" (uuid b2dacf27-82f7-425f-9dc1-80ba8558cd69))
     (instances
-      (project "Kosmo_100mm"
+      (project "pmf_panel"
         (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
           (reference "#FLG01") (unit 1)
         )
@@ -1935,6 +1716,131 @@
       (project "Kosmo_25mm"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "#FLG01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Kosmo:Pot_Hole") (at 158.75 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid bab0db14-7b2f-46b9-aefc-74d21879eaab)
+    (property "Reference" "H16" (at 163.449 95.4532 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Pot_Hole" (at 163.449 97.7646 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Kosmo_panel:Kosmo_Pot_Hole" (at 158.75 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 158.75 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 70245cae-739f-4bca-90b3-0436a98f5f5f))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "H16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 50.8 125.73 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e0fbe86c-df31-44ea-b717-2e0a2bcae1fd)
+    (property "Reference" "#PWR09" (at 50.8 132.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 50.927 130.1242 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 50.8 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 50.8 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6d67b056-9feb-41a9-a48f-df5108cfd28b))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "#PWR09") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Kosmo:Pot_Hole") (at 127 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ee4226cb-2934-49f3-8f55-1bde90782798)
+    (property "Reference" "H15" (at 131.699 95.4532 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Pot_Hole" (at 131.699 97.7646 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Kosmo_panel:Kosmo_Pot_Hole" (at 127 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 127 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ef04b2fd-f4f9-4f6c-9bfc-33e9d52d5afa))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "H15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 127 101.6 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f6bd9e34-da59-4b50-bd69-314236b6fc91)
+    (property "Reference" "#PWR014" (at 127 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 127.127 105.9942 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 127 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 127 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2d33d50f-6dda-473e-9ca2-9ce2c84f18ef))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "#PWR014") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Kosmo:Pot_Hole") (at 76.2 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f88e7970-29ed-441f-bef3-532f40eb8133)
+    (property "Reference" "H7" (at 80.899 95.4532 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Pot_Hole" (at 80.899 97.7646 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Kosmo_panel:Kosmo_Pot_Hole" (at 76.2 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 76.2 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8d7b1404-0120-44ab-b7da-eb1a50229197))
+    (instances
+      (project "pmf_panel"
+        (path "/51ee3bd4-7fc3-45ce-b924-e23131ebd243"
+          (reference "H7") (unit 1)
         )
       )
     )

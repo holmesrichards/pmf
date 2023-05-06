@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "pmf_panel")(type "KiCad")(uri "${KIPRJMOD}/pmf_panel.pretty")(options "")(descr ""))
+)

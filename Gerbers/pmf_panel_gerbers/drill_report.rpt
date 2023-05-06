@@ -1,5 +1,5 @@
 Drill report for pmf_panel.kicad_pcb
-Created on Sun Apr  2 11:19:21 2023
+Created on Fri May  5 21:30:00 2023
 
 Copper Layer Stackup:
     =============================================================
@@ -10,16 +10,14 @@ Copper Layer Stackup:
 Drill file 'pmf_panel.drl' contains
     plated through holes:
     =============================================================
-    T1  0.600mm  0.0236"  (80 holes)
+    T1  0.600mm  0.0236"  (96 holes)
     T2  3.200mm  0.1260"  (4 holes)  (with 4 slots)
 
-    Total plated holes count 84
+    Total plated holes count 100
 
 
 Not plated through holes are merged with plated holes
     unplated through holes:
     =============================================================
-    T3  2.500mm  0.0984"  (1 hole)
-    T4  5.000mm  0.1969"  (1 hole)
 
-    Total unplated holes count 2
+    Total unplated holes count 0
