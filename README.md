@@ -89,6 +89,7 @@ For the formulas for pole mixing upon which these plots are based, see [https://
 * [Daughterboard schematic](Docs/pmf_daughter_schematic.pdf)
 * Daughterboard PCB layout: [front](Docs/Layout/pmf_daughter/pmf_daughter_front.svg), [back](Docs/Layout/pmf_daughter/pmf_daughter_back.svg)
 * [Daughterboard BOM](Docs/BOM/pmf_daughter_bom.md)
+* [Blog post](https://analogoutputblog.wordpress.com/2023/05/04/pole-mixing-filter/)
 
 ## GitHub repository
 
