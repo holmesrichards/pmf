@@ -81,6 +81,12 @@ For the formulas for pole mixing upon which these plots are based, see [https://
 ## Current draw
 ? mA +12 V, ? mA -12 V
 
+## Photos
+
+![Front](Images/front.JPG)
+![Back](Images/back.JPG)
+
+
 ## Documentation
 
 * [Schematic](Docs/pmf_schematic.pdf)
