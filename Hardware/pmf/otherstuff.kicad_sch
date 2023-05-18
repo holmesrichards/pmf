@@ -299,147 +299,6 @@
         )
       )
     )
-    (symbol "AO_symbols:DIP-14" (in_bom yes) (on_board no)
-      (property "Reference" "J" (at 0 1.016 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "DIP-14" (at 0 -1.27 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 -1.524 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 -1.524 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Vendor" "Tayda" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "SKU" "A-004" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_description" "14 pin DIP socket" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "DIP-14_0_1"
-        (rectangle (start -1.27 3.556) (end 1.27 -3.556)
-          (stroke (width 0) (type default))
-          (fill (type background))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -3.048)
-            (xy -1.778 -3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -2.032)
-            (xy -1.778 -2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -1.016)
-            (xy -1.778 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 0)
-            (xy -1.778 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 1.016)
-            (xy -1.778 1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 2.032)
-            (xy -1.778 2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 3.048)
-            (xy -1.778 3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 -3.048)
-            (xy 1.27 -3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 -2.032)
-            (xy 1.27 -2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 -1.016)
-            (xy 1.27 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 0)
-            (xy 1.27 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 1.016)
-            (xy 1.27 1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 2.032)
-            (xy 1.27 2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.778 3.048)
-            (xy 1.27 3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-    )
     (symbol "AO_symbols:DIP-18" (in_bom yes) (on_board no)
       (property "Reference" "J" (at 0 1.016 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -6114,6 +5973,30 @@
     )
   )
 
+  (symbol (lib_id "AO_symbols:DIP-8") (at 233.68 162.56 0) (unit 1)
+    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid b6f268be-23f3-45da-84bb-46e5658edc6b)
+    (property "Reference" "J17" (at 233.68 161.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "DIP-8" (at 233.68 163.576 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "AO_tht:DIP-8_W7.62mm_Socket_LongPads" (at 233.68 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 233.68 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "pmf"
+        (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/a180c6ca-d86a-4fef-be09-a6b0b94046eb"
+          (reference "J17") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "AO_symbols:R") (at 125.73 59.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8c6a9c4-c4b3-420c-850a-6e6e5fe7b575)
@@ -6541,30 +6424,6 @@
       (project "pmf"
         (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/a180c6ca-d86a-4fef-be09-a6b0b94046eb"
           (reference "ZSC1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "AO_symbols:DIP-14") (at 233.68 163.83 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
-    (uuid dff1a61a-24a8-4bc1-bf12-40fd6b972555)
-    (property "Reference" "J17" (at 233.68 162.814 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "DIP-14" (at 233.68 165.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "AO_tht:DIP-14_W7.62mm_Socket_LongPads" (at 233.68 165.354 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 233.68 165.354 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "pmf"
-        (path "/1fce46f5-2003-4c7e-915f-b9b7dfc679d7/a180c6ca-d86a-4fef-be09-a6b0b94046eb"
-          (reference "J17") (unit 1)
         )
       )
     )

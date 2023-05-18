@@ -1,10 +1,10 @@
 # pmf.kicad_sch BOM
 
-Tue 04 Apr 2023 08:02:15 PM EDT
+Fri 05 May 2023 09:03:30 PM EDT
 
-Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
+Generated from schematic by Eeschema 7.0.2-6a45011f42~172~ubuntu22.04.1
 
-**Component Count:** 152
+**Component Count:** 150
 
 | Refs | Qty | Component | Description | Manufacturer | Part | Vendor | SKU |
 | ----- | --- | ---- | ----------- | ---- | ---- | ---- | ---- |
@@ -22,9 +22,8 @@ Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
 | J10 | 1 | Synth_power_2x5 | Pin header 2.54 mm 2x5 |  |  | Tayda | A-2939 |
 | J11 | 1 | Conn_02x07_Odd_Even | Shrouded IDC header, 2x7 positions |  |  |  |  |
 | J13 | 1 | Conn_02x07_Odd_Even | IDC connector, 2x7 positions |  |  |  |  |
-| J14, J15 | 2 | DIP-8 | 8 pin DIP socket |  |  |  |  |
+| J14, J15, J17 | 3 | DIP-8 | 8 pin DIP socket |  |  |  |  |
 | J16 | 1 | Conn_02x07_Odd_Even | 2.54 mm pin header, 2x7 positions |  |  |  |  |
-| J17 | 1 | DIP-14 | 14 pin DIP socket |  |  | Tayda | A-004 |
 | J18 | 1 | DIP-18 | 18 pin DIP socket |  |  |  |  |
 | R1, R3, R8, R13 | 4 | 82k | Resistor |  |  | Tayda |  |
 | R2, R6, R7, R11, R16, R56, R58–62, R64, R65, R67, R68 | 15 | 100k | Resistor |  |  | Tayda |  |
@@ -42,14 +41,14 @@ Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
 | R47 | 1 | 2k | Resistor |  |  | Tayda |  |
 | R57, R74 | 2 | 1k | Resistor |  |  | Tayda |  |
 | R66, R72 | 2 | 51k | Resistor |  |  | Tayda |  |
-| R69–71, R73 | 4 | 10k | Resistor |  |  | Tayda |  |
+| R70, R73 | 2 | 10k | Resistor |  |  | Tayda |  |
 | R75–78 | 4 | 1M | Resistor |  |  | Tayda |  |
 | RV1–4 | 4 | 20k | Bourns 3296W |  |  | Tayda |  |
 | RV5, RV11 | 2 | 10k | Bourns 3296X (side screw) |  |  | Tayda |  |
 | RV6–10 | 5 | 100k | 16 mm board mount linear potentiometer |  |  | Tayda |  |
 | SW1 | 1 | SW_Rotary12 | rotary switch with 12 positions |  |  | Tayda | A-1893 |
-| U1, U3 | 2 | TL074 | Quad operational amplifier, DIP-14 |  |  | Tayda | A-1138 |
-| U2, U4 | 2 | TL072 | Dual operational amplifier, DIP-8 |  |  | Tayda | A-037 |
+| U1 | 1 | TL074 | Quad operational amplifier, DIP-14 |  |  | Tayda | A-1138 |
+| U2–4 | 3 | TL072 | Dual operational amplifier, DIP-8 |  |  | Tayda | A-037 |
 | U5 | 1 | AS3320 | VCF | Alfa |  |  |  |
 | W1 | 1 | Ribbon_Cable | 14 conductor 1.27 mm pitch ribbon cable 12 cm |  |  |  |  |
 | ZKN1 | 1 | Knob_MF-A04 | MF-A04 knob |  |  |  |  |
@@ -62,7 +61,7 @@ Generated from schematic by Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1
 |Value|Qty|Refs|
 |----|----|----|
 |1k|2|R57, R74|
-|10k|4|R69–71, R73|
+|10k|2|R70, R73|
 |100k|15|R2, R6, R7, R11, R16, R56, R58–62, R64, R65, R67, R68|
 |1M|4|R75–78|
 |1.2k|1|R4|
